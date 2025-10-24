@@ -1,0 +1,374 @@
+## 예스스탁 예스트레이더 이지랭귀지 작성 파일
+
+inputs: jutPosiCC(0), sonikNuCC(0), sonikJungSanCC(0), sonikJungGokCC(0),  bbPeriod(40), bbMultiD(2),  tmSm(100), tmBg(200), tmSmSun(14), tmBgSun(4), tmBgSunDum(10),   guSm(400), guBg(1200), sunjnTick(10), hutoeSunSoTick(15), hutoeSunDeTick(30), hutoeTick(44), 
+posiJnHu1(20), posiJnHu2(40), posiJnHu1gamryul(0.3), posiJnHu2gamryul(0.6), sonikJungSanGokCha(100);
+
+variables: tmGggSh1(0), tmGggSh(0), tmGggShBhbs(0), tmGggBhSh1(0), tmGggBhSh(0),
+
+tmGggWcSh(0), tmGggWcBhBar1(0), tmGggWcBhBar(0), tmGggWs(0),  
+tmGggSanBar(0), tmGggSanCgap(0), tmGggGokBar(0), tmGggGokCgap(0), tmGggHaKokCgap(0), tmGggSangKokCgap(0), tmGggBulilchi(0), tmGggHnSanGap(0), tmGggHnGokGap(0),
+
+BBup2(0,data2), BBdn2(0,data2), midLine(0,data2), bbSangSun(0), bbHaSun(0), bbJungSun(0),
+tmGggSunJnculSh(0), tmGggSunJnculCgap(0),  giJnWc(0), giWc1(0), giWc(0), 
+giBBsunDol1(0), giBBsunDol(0), giBBsunDolSh(0), 
+tmGggSangGaSun(1004), tmGggHaGaSun(-1004),  tmGggHaSunCross(0), tmGggHaGaSunCross(0), tmGggSangSunCross(0), tmGggSangGaSunCross(0), 
+jang(0), giSonik(0), 
+tms25crossBar1(0), tms25crossBar(0), tms25gokCgap(0), tms25sanCgap(0),  
+gibyulBhbs(0), gibyul(0), gibyulHyung(""), 
+jutPosi(0), jutPosiBhbs(0), jutPosiSljnGap(0), jutPosiSljnGapHutoeSunSoTick(0), jutPosiHutoeGokSun(0), jutPosiJnJutmGap(0), jutPosiHutoeSunChi(0), jutPosiHuSunjn(0), 
+jutPosiSiJang(0), jutPosiDolCchi(0), jutPosiJnTmGap(0), jutPosiType(""), jutPosiBsTmGggSun(0), jutPosiMuBsHyung(""), jutPosiJungSunjn(0),
+
+sangDolTmGggSun1(0), sangDolTmGggSun(0), sangDolCchi1(0), sangDolCchi(0),
+haDolTmGggSun1(0), haDolTmGggSun(0), haDolCchi1(0), haDolCchi(0),  dolTmGggSunBhbs(0),
+sangDolTmSmGggSun1(0), sangDolTmSmGggSun(0), sangDolTmSmCchi1(0), sangDolTmSmCchi(0),
+haDolTmSmGggSun1(0), haDolTmSmGggSun(0), haDolTmSmCchi1(0), haDolTmSmCchi(0),  dolTmSmGggSunBhbs(0),  
+sangDolTmSmGggSunBhbs(0), haDolTmSmGggSunBhbs(0), sangDolTmGggSunBhbs(0), haDolTmGggSunBhbs(0), 
+
+bbSunDolSh(0), bbSunDolC(0), injungBBsunDleCha(0),
+slheng(1),
+
+jangCC(0), hapJang(0), hapJang1(0),
+posiJnHuSh(0),
+jutPosiHuSonik(0), sonikNu(0), sonikJungSan(0), sonikJungGok(0),
+jeondal(0);  
+
+
+
+#### 실현 템기울기울기BB tmGggSh 변수값
+### 템기울기울선 상대 상황
+tmGggSh1= tmGggSh;  # 이전일  
+if tmGggSh1==0 then {
+if tmsGiulGiulgiBB(tmBg)> tmBgSun then tmGggSh=2; 
+else if tmsGiulGiulgiBB(tmBg)< neg(tmBgSun) then tmGggSh=-2; 
+                   }
+else if tmGggSh1>=1 then {
+if tmsGiulGiulgiBB(tmBg)> tmBgSun then tmGggSh=2; 
+else if tmsGiulGiulgiBB(tmBg)<= tmBgSun and tmsGiulGiulgiBB(tmBg)>=tmBgSun-tmBgSunDum then tmGggSh=1;  
+else if tmsGiulGiulgiBB(tmBg)<tmBgSun-tmBgSunDum and tmsGiulGiulgiBB(tmBg)>= neg(tmBgSun) then tmGggSh=-1; 
+else if tmsGiulGiulgiBB(tmBg)< neg(tmBgSun) then tmGggSh=-2; 
+                         }
+else if tmGggSh1<=-1 then {
+if tmsGiulGiulgiBB(tmBg)< neg(tmBgSun) then tmGggSh=-2; 
+else if tmsGiulGiulgiBB(tmBg)>= neg(tmBgSun) and tmsGiulGiulgiBB(tmBg)<=neg(tmBgSun)+tmBgSunDum then tmGggSh=-1;  
+else if tmsGiulGiulgiBB(tmBg)>neg(tmBgSun)+tmBgSunDum and tmsGiulGiulgiBB(tmBg)<= tmBgSun then tmGggSh=1; 
+else if tmsGiulGiulgiBB(tmBg)> tmBgSun then tmGggSh=2; 
+                         }
+if tmGggSh1!=tmGggSh then { tmGggShBhbs=8; tmGggBhSh1= tmGggBhSh;  tmGggBhSh=tmGggSh;  }  # 템기울기울기변화상황
+else tmGggShBhbs=0;
+
+
+
+#### 실현 템기울기울기BB 상하 불일치
+### 템기울기울선 위치 상황   
+if tmGggWcSh==0 then {
+if crossup(tmsGiulGiulgiBB(tmBg),0 ) then { tmGggWcBhBar=BarIndex; tmGggWcSh=1; tmGggWs=1;  }
+else if crossdown(tmsGiulGiulgiBB(tmBg),0 ) then { tmGggWcBhBar=BarIndex; tmGggWcSh=-1; tmGggWs=-1;  }
+                     }  
+
+else if tmGggWcSh==1 then {
+if tmsGiulGiulgiBB(tmBg)>=tmGggHnSanGap then tmGggSanCgap=c;
+if crossdown(tmsGiulGiulgiBB(tmBg),0 ) then { tmGggWcSh=-1; tmGggHnSanGap=-1004;  }    
+                          }
+else if tmGggWcSh==-1 then {
+if tmsGiulGiulgiBB(tmBg)<=tmGggHnGokGap then tmGggGokCgap=c;
+if crossup(tmsGiulGiulgiBB(tmBg),0 ) then { tmGggWcSh=1; tmGggHnGokGap=1004;  }    
+                           }
+
+if tmGggWs==0 then { 
+if crossup(tmsGiulGiulgiBB(tmBg),0 ) then tmGggWs=-1;
+else if crossdown(tmsGiulGiulgiBB(tmBg),0 ) then tmGggWs=1;       
+                   }
+else if tmGggWs==1 and tmGggWcSh==-1 and av(tmsGiulGiulgiBB(tmBg) )==1 then { 
+tmGggWs=0;  tmGggHaKokCgap=c[1]; 
+if tmGggSanCgap-tmGggHaKokCgap>0 then tmGggBulilchi=-1;  else tmGggBulilchi=2; 
+                                                                       }   
+else if tmGggWs==-1 and tmGggWcSh==1 and av(tmsGiulGiulgiBB(tmBg) )==-1 then { 
+tmGggWs=0;  tmGggSangKokCgap=c[1]; 
+if tmGggSangKokCgap- tmGggGokCgap>0 then tmGggBulilchi=1;  else tmGggBulilchi=-2;
+                                                                             } 
+
+
+#### 실현 data2 장 판단
+## 보편처리일
+sangDolTmGggSunBhbs=0; haDolTmGggSunBhbs=0;
+
+### data2 볼린저밴드 부
+BBup2 = data2(BollBandUp(bbPeriod,bbMultiD ));
+BBdn2 = data2(BollBandDown(bbPeriod,bbMultiD ));
+midLine= (BBup2+ BBdn2)*0.5;
+bbSangSun=BBup2;  bbHaSun=BBdn2;  bbJungSun=midLine;  # 20틱 변수화
+
+### 템기울기울기BB tmBg 상하선 진출시 기진출위치부
+if crossup(tmsGiulGiulgiBB(tmBg), neg(tmBgSun) ) then { tmGggSunJnculSh=-11; tmGggSunJnculCgap=c;  }
+else if crossdown(tmsGiulGiulgiBB(tmBg), tmBgSun ) then { tmGggSunJnculSh=10; tmGggSunJnculCgap=c;  }
+
+if tmGggSunJnculCgap<bbHaSun then giJnWc=1; 
+else if tmGggSunJnculCgap>=bbHaSun and tmGggSunJnculCgap<bbJungSun then giJnWc=2; 
+else if tmGggSunJnculCgap>=bbJungSun and tmGggSunJnculCgap<=bbSangSun then giJnWc=3;
+else if tmGggSunJnculCgap>bbSangSun then giJnWc=4;
+
+### 기 위치 파악부
+giWc1=giWc;
+if c<bbHaSun then giWc=1; 
+else if c>=bbHaSun and c<bbJungSun then giWc=2; 
+else if c>=bbJungSun and c<=bbSangSun then giWc=3;
+else if c>bbSangSun then giWc=4; 
+
+### 기BB선 돌 파악부
+if crossup(c,bbSangSun) then { giBBsunDol1= giBBsunDol; giBBsunDol=3; }
+else if crossup(c,bbJungSun) then { giBBsunDol1= giBBsunDol; giBBsunDol=2; }
+else if crossup(c,bbHaSun) then { giBBsunDol1= giBBsunDol; giBBsunDol=1; }
+if crossdown(c,bbHaSun) then { giBBsunDol1= giBBsunDol; giBBsunDol=-1; }
+else if crossdown(c,bbJungSun) then { giBBsunDol1= giBBsunDol; giBBsunDol=-2; }
+else if crossdown(c,bbSangSun) then { giBBsunDol1= giBBsunDol; giBBsunDol=-3; }
+
+
+### 템gggBB tmBg 상하가선
+if tmsGiulGiulgiBB(tmBg)>neg(tmBgSun) and tmsGiulGiulgiBB(tmBg)<tmBgSun then {
+if tmGggSangGaSun>=tmsGiulGiulgiBB(tmBg) then tmGggSangGaSun=tmsGiulGiulgiBB(tmBg);   
+                                                                   }
+else tmGggSangGaSun=1004; 
+
+if tmsGiulGiulgiBB(tmBg)<tmBgSun and tmsGiulGiulgiBB(tmBg)>neg(tmBgSun) then {
+if tmGggHaGaSun<=tmsGiulGiulgiBB(tmBg) then tmGggHaGaSun=tmsGiulGiulgiBB(tmBg);   
+                                                                       }
+else tmGggHaGaSun=-1004; 
+
+
+### 템ggg 상하선, 상하가선 크로스부
+## 해제
+if tmGggHaSunCross==1 then { 
+if crossdown(tmsGiulGiulgiBB(tmBg), neg(tmBgSun) ) then tmGggHaSunCross=0;
+if tmsGiulGiulgiBB(tmBg)>tmBgSun then tmGggHaSunCross=0;
+                           }
+if tmGggHaGaSunCross==1 then {
+if crossdown(tmsGiulGiulgiBB(tmBg), tmGggHaGaSun ) then tmGggHaGaSunCross=0;
+if tmGggHaGaSun==-1004 then tmGggHaGaSunCross=0;
+                             }
+
+if tmGggSangSunCross==-1 then {
+if crossup(tmsGiulGiulgiBB(tmBg), tmBgSun ) then tmGggSangSunCross=0;
+if tmsGiulGiulgiBB(tmBg)<neg(tmBgSun) then tmGggSangSunCross=0;
+                              }
+if tmGggSangGaSunCross==-1 then {
+if crossup(tmsGiulGiulgiBB(tmBg), tmGggSangGaSun ) then tmGggSangGaSunCross=0;
+if tmGggSangGaSun==1004 then tmGggSangGaSunCross=0;
+                                }
+
+## 부여
+if crossup(tmsGiulGiulgiBB(tmBg), neg(tmBgSun) ) then tmGggHaSunCross=1; 
+if crossup(tmsGiulGiulgiBB(tmBg), tmGggHaGaSun ) then tmGggHaGaSunCross=1; 
+if crossdown(tmsGiulGiulgiBB(tmBg), tmBgSun ) then tmGggSangSunCross=-1; 
+if crossdown(tmsGiulGiulgiBB(tmBg), tmGggSangGaSun ) then tmGggSangGaSunCross=-1; 
+
+
+### 템SmGgg 3선 돌 종합부 - 템ggg값, 씨값 파악
+sangDolTmSmGggSunBhbs=0; haDolTmSmGggSunBhbs=0; dolTmSmGggSunBhbs=0; # 보편처리일
+
+if crossup(tmsGiulGiulgiBB(tmSm), tmSmSun ) then 
+{ sangDolTmSmGggSun1=sangDolTmSmGggSun; sangDolTmSmCchi1=sangDolTmSmCchi;  dolTmSmGggSunBhbs=3; sangDolTmSmGggSunBhbs=3; sangDolTmSmGggSun=3; sangDolTmSmCchi=c;  }
+else if crossup(tmsGiulGiulgiBB(tmSm), 0 ) then 
+{ sangDolTmSmGggSun1=sangDolTmSmGggSun; sangDolTmSmCchi1=sangDolTmSmCchi;  dolTmSmGggSunBhbs=2; sangDolTmSmGggSunBhbs=2; sangDolTmSmGggSun=2; sangDolTmSmCchi=c;  }
+else if crossup(tmsGiulGiulgiBB(tmSm), neg(tmSmSun) ) then 
+{ sangDolTmSmGggSun1=sangDolTmSmGggSun; sangDolTmSmCchi1=sangDolTmSmCchi;  dolTmSmGggSunBhbs=1; sangDolTmSmGggSunBhbs=1; sangDolTmSmGggSun=1; sangDolTmSmCchi=c;  }
+
+if crossdown(tmsGiulGiulgiBB(tmSm), neg(tmSmSun) ) then 
+{ haDolTmSmGggSun1=haDolTmSmGggSun; haDolTmSmCchi1=haDolTmSmCchi;  dolTmSmGggSunBhbs=-1; haDolTmSmGggSunBhbs=1; haDolTmSmGggSun=1; haDolTmSmCchi=c;  }
+else if crossdown(tmsGiulGiulgiBB(tmSm), 0 ) then 
+{ haDolTmSmGggSun1=haDolTmSmGggSun; haDolTmSmCchi1=haDolTmSmCchi;  dolTmSmGggSunBhbs=-2; haDolTmSmGggSunBhbs=2; haDolTmSmGggSun=2; haDolTmSmCchi=c;  }
+else if crossdown(tmsGiulGiulgiBB(tmSm), tmSmSun ) then 
+{ haDolTmSmGggSun1=haDolTmSmGggSun; haDolTmSmCchi1=haDolTmSmCchi;  dolTmSmGggSunBhbs=-3; haDolTmSmGggSunBhbs=3; haDolTmSmGggSun=3; haDolTmSmCchi=c;  }
+
+
+### 템BgGgg 3선 돌 종합부 - 템ggg값, 씨값 파악
+sangDolTmGggSunBhbs=0; haDolTmGggSunBhbs=0; dolTmGggSunBhbs=0; # 보편처리일
+
+if crossup(tmsGiulGiulgiBB(tmBg), tmBgSun ) then 
+{ sangDolTmGggSun1=sangDolTmGggSun; sangDolCchi1=sangDolCchi;  dolTmGggSunBhbs=3; sangDolTmGggSunBhbs=3; sangDolTmGggSun=3; sangDolCchi=c;  }
+else if crossup(tmsGiulGiulgiBB(tmBg), 0 ) then 
+{ sangDolTmGggSun1=sangDolTmGggSun; sangDolCchi1=sangDolCchi;  dolTmGggSunBhbs=2; sangDolTmGggSunBhbs=2; sangDolTmGggSun=2; sangDolCchi=c;  }
+else if crossup(tmsGiulGiulgiBB(tmBg), neg(tmBgSun) ) then 
+{ sangDolTmGggSun1=sangDolTmGggSun; sangDolCchi1=sangDolCchi;  dolTmGggSunBhbs=1; sangDolTmGggSunBhbs=1; sangDolTmGggSun=1; sangDolCchi=c;  }
+
+if crossdown(tmsGiulGiulgiBB(tmBg), neg(tmBgSun) ) then 
+{ haDolTmGggSun1=haDolTmGggSun; haDolCchi1=haDolCchi;  dolTmGggSunBhbs=-1; haDolTmGggSunBhbs=1; haDolTmGggSun=1; haDolCchi=c;  }
+else if crossdown(tmsGiulGiulgiBB(tmBg), 0 ) then 
+{ haDolTmGggSun1=haDolTmGggSun; haDolCchi1=haDolCchi;  dolTmGggSunBhbs=-2; haDolTmGggSunBhbs=2; haDolTmGggSun=2; haDolCchi=c;  }
+else if crossdown(tmsGiulGiulgiBB(tmBg), tmBgSun ) then 
+{ haDolTmGggSun1=haDolTmGggSun; haDolCchi1=haDolCchi;  dolTmGggSunBhbs=-3; haDolTmGggSunBhbs=3; haDolTmGggSun=3; haDolCchi=c;  }
+
+
+### 장 판단부 
+## 정방장 해제
+if jang==1 and gu(guBg)>bbSangSun then jang=10;
+else if jang==-1 and gu(guBg)<bbHaSun then jang=-10;  
+
+if jang==10 or jang==-1 then {
+if giBBsunDol1==1 and giBBsunDol==2 then giBBsunDolSh=12; 
+if giBBsunDolSh==12 then {  
+if giBBsunDol==-1 then giBBsunDolSh=0;
+if giBBsunDol1==2 and giBBsunDol==3 then { jang=0; giBBsunDolSh=0; } 
+                         }   
+                             }   
+if jang==-10 or jang==1 then {                         
+if giBBsunDol1==-3 and giBBsunDol==-2 then giBBsunDolSh=32; 
+if giBBsunDolSh==32 then {  
+if giBBsunDol==3 then giBBsunDolSh=0;
+if giBBsunDol1==-2 and giBBsunDol==-1 then { jang=0; giBBsunDolSh=0; } 
+                         }        
+                             }  
+                      
+## 정방장 부여
+if giJnWc>=3 then jang=1;    
+else if giJnWc<=2 then jang=-1;   
+if giWc==4 and tmGggHaGaSunCross==1 then jang=1; 
+else if giWc==1 and tmGggSangGaSunCross==-1 then jang=-1; 
+if sangDolTmGggSun1>=sangDolTmGggSun and sangDolCchi1<sangDolCchi then jang=1; 
+else if haDolTmGggSun1<=haDolTmGggSun and haDolCchi1>haDolCchi then jang=-1; 
+
+
+                                               
+#### 3대 장판단 종합부
+hapJang1=hapJang;  # 이전일
+
+## jang 1을 2로 전환
+if jang==1 then jangCC=2;
+else if jang==-1 then jangCC=-2;  
+
+### 종합
+if tmGggSh==2 and tmGggBulilchi==2 then hapJang=1;
+else if tmGggSh==2 and jangCC==2 then hapJang=1;
+else if tmGggBulilchi==2 and jangCC==2 then hapJang=1;
+
+if tmGggSh==-2 and tmGggBulilchi==-2 then hapJang=-1;
+else if tmGggSh==-2 and jangCC==-2 then hapJang=-1;
+else if tmGggBulilchi==-2 and jangCC==-2 then hapJang=-1;
+
+
+
+#### 필기 : sangDolTmGggSunBhbs=1; sangDolTmGggSun=1; sangDolCchi=c; / haDolTmGggSunBhbs=1; haDolTmGggSun=1; haDolCchi=c;
+
+#### 입장 전 전달부 - jutPosiCC(0), sonikNuCC(0), sonikJungSanCC(0), sonikJungGokCC(0),
+if jeondal==0 and  CurrentDate==date and pos(currentTime-time)<=30 and time>=65500 then {
+jutPosi=jutPosiCC; sonikNu=sonikNuCC; sonikJungSan=sonikJungSanCC; sonikJungGok=sonikJungGokCC;  jeondal=1004;
+                                                                                        }
+
+
+#### 포지션부
+jutPosiBhbs=0;  # 보편처리일
+
+### 입장8 해제부
+if hapJang1!=hapJang then {
+if jutPosi==1004 then { jutPosi=0; sonikJungSan=sonikNu; }  
+                          }
+
+
+### 입장 유중 선진 파악부
+if jutPosi==1 and giWc==4 then jutPosiJungSunjn=4;    
+else if jutPosi==-1 and giWc==1 then jutPosiJungSunjn=1;     
+
+
+### 진입후 상황 판단부 - 새로 올바르게 고친것                 
+if (jutPosi==1 or jutPosi==1.1) and posiJnHuSh==0 then { if c>= jutPosiSljnGap+ PriceScale*posiJnHu1 then posiJnHuSh=1;  }
+else if (jutPosi==1 or jutPosi==1.1) and posiJnHuSh==1 then { if c>= jutPosiSljnGap+ PriceScale*posiJnHu2 then posiJnHuSh=2;  }                                      
+
+if (jutPosi==-1 or jutPosi==-1.1) and posiJnHuSh==0 then { if c<= jutPosiSljnGap- PriceScale*posiJnHu1 then posiJnHuSh=-1;  }
+else if (jutPosi==-1 or jutPosi==-1.1) and posiJnHuSh==-1 then { if c<= jutPosiSljnGap- PriceScale*posiJnHu2 then posiJnHuSh=-2;  } 
+                   
+
+### 입장 유 발생
+if jutPosi==0 and hapJang==1 and  sangDolTmSmGggSunBhbs>=1 then 
+{ jutPosiBhbs=1; jutPosi=1;  jutPosiSljnGap=c; jutPosiDolCchi=sangDolCchi;  jutPosiJnTmGap=tms(25);  jutPosiType="sangDol"; jutPosiBsTmGggSun=sangDolTmSmGggSunBhbs;  }  
+else if jutPosi==0 and hapJang==-1 and  haDolTmSmGggSunBhbs>=1 then 
+{ jutPosiBhbs=-1; jutPosi=-1;  jutPosiSljnGap=c; jutPosiDolCchi=sangDolCchi;  jutPosiJnTmGap=tms(25);  jutPosiType="haDol"; jutPosiBsTmGggSun=haDolTmSmGggSunBhbs;  }  
+
+else if jutPosi==8 and hapJang==-1 and  sangDolTmSmGggSunBhbs>=1 then 
+{ jutPosiBhbs=1; jutPosi=1.1;  jutPosiSljnGap=c; jutPosiDolCchi=sangDolCchi;  jutPosiJnTmGap=tms(25);  jutPosiType="sangDol"; jutPosiBsTmGggSun=sangDolTmSmGggSunBhbs;  }  
+else if jutPosi==8 and hapJang==1 and  haDolTmSmGggSunBhbs>=1 then 
+{ jutPosiBhbs=-1; jutPosi=-1.1;  jutPosiSljnGap=c; jutPosiDolCchi=sangDolCchi;  jutPosiJnTmGap=tms(25);  jutPosiType="haDol"; jutPosiBsTmGggSun=haDolTmSmGggSunBhbs;  } 
+
+
+### 입장 무 발생
+else if jutPosi==1 then {    
+if haDolTmGggSun1>=jutPosiBsTmGggSun and  haDolTmGggSunBhbs!=0 and haDolTmGggSunBhbs<=jutPosiBsTmGggSun then { jutPosiBhbs=10; jutPosi=0; jutPosiMuBsHyung="sunjn";  } 
+#else if sangDolTmGggSunBhbs!=0 and sangDolTmGggSunBhbs>=jutPosiBsTmGggSun and  sangDolCchi-sangDolCchi1<0 then { jutPosiBhbs=10; jutPosi=0; jutPosiMuBsHyung="yuk";  }
+else if c<= jutPosiSljnGap- PriceScale*hutoeTick then { jutPosiBhbs=10; jutPosi=0; jutPosiMuBsHyung="hutoe";  }        
+
+if posiJnHuSh==1 and  c<=jutPosiSljnGap+(PriceScale*posiJnHu1*posiJnHu1gamryul) then { jutPosiBhbs=10; jutPosi=0; jutPosiMuBsHyung="posiJnHuSh1"; } 
+else if posiJnHuSh==2 and  c<=jutPosiSljnGap+(PriceScale*posiJnHu2*posiJnHu2gamryul) then { jutPosiBhbs=10; jutPosi=0; jutPosiMuBsHyung="posiJnHuSh2"; }
+                        }
+                                                                        
+else if jutPosi==-1 then {
+if sangDolTmGggSun1<=jutPosiBsTmGggSun and  sangDolTmGggSunBhbs!=0 and sangDolTmGggSunBhbs>=jutPosiBsTmGggSun then { jutPosiBhbs=-10; jutPosi=0; jutPosiMuBsHyung="sunjn";  }
+#else if haDolTmGggSunBhbs!=0 and haDolTmGggSunBhbs<=jutPosiBsTmGggSun and  sangDolCchi-sangDolCchi1>0 then { jutPosiBhbs=-10; jutPosi=0; jutPosiMuBsHyung="yuk";  }
+else if c>= jutPosiSljnGap+ PriceScale*hutoeTick then { jutPosiBhbs=-10; jutPosi=0; jutPosiMuBsHyung="hutoe";  }        
+
+if posiJnHuSh==-1 and  c>=jutPosiSljnGap-(PriceScale*posiJnHu1*posiJnHu1gamryul) then { jutPosiBhbs=-10; jutPosi=0; jutPosiMuBsHyung="posiJnHuSh1"; } 
+else if posiJnHuSh==-2 and  c>=jutPosiSljnGap-(PriceScale*posiJnHu2*posiJnHu2gamryul) then { jutPosiBhbs=-10; jutPosi=0; jutPosiMuBsHyung="posiJnHuSh2"; } 
+                         } 
+
+## 입장 8의
+else if jutPosi==1.1 then {    
+if haDolTmGggSun1>=jutPosiBsTmGggSun and  haDolTmGggSunBhbs!=0 and haDolTmGggSunBhbs<=jutPosiBsTmGggSun then { jutPosiBhbs=10; jutPosi=0; jutPosiMuBsHyung="sunjn";  } 
+#else if sangDolTmGggSunBhbs!=0 and sangDolTmGggSunBhbs>=jutPosiBsTmGggSun and  sangDolCchi-sangDolCchi1<0 then { jutPosiBhbs=10; jutPosi=0; jutPosiMuBsHyung="yuk";  }
+else if c<= jutPosiSljnGap- PriceScale*hutoeTick then { jutPosiBhbs=10; jutPosi=0; jutPosiMuBsHyung="hutoe";  }        
+
+if posiJnHuSh==1 and  c<=jutPosiSljnGap+(PriceScale*posiJnHu1*posiJnHu1gamryul) then { jutPosiBhbs=10; jutPosi=0; jutPosiMuBsHyung="posiJnHuSh1"; } 
+else if posiJnHuSh==2 and  c<=jutPosiSljnGap+(PriceScale*posiJnHu2*posiJnHu2gamryul) then { jutPosiBhbs=10; jutPosi=0; jutPosiMuBsHyung="posiJnHuSh2"; }
+                        }
+                                                                        
+else if jutPosi==-1.1 then {
+if sangDolTmGggSun1<=jutPosiBsTmGggSun and  sangDolTmGggSunBhbs!=0 and sangDolTmGggSunBhbs>=jutPosiBsTmGggSun then { jutPosiBhbs=-10; jutPosi=0; jutPosiMuBsHyung="sunjn";  }
+#else if haDolTmGggSunBhbs!=0 and haDolTmGggSunBhbs<=jutPosiBsTmGggSun and  sangDolCchi-sangDolCchi1>0 then { jutPosiBhbs=-10; jutPosi=0; jutPosiMuBsHyung="yuk";  }
+else if c>= jutPosiSljnGap+ PriceScale*hutoeTick then { jutPosiBhbs=-10; jutPosi=0; jutPosiMuBsHyung="hutoe";  }        
+
+if posiJnHuSh==-1 and  c>=jutPosiSljnGap-(PriceScale*posiJnHu1*posiJnHu1gamryul) then { jutPosiBhbs=-10; jutPosi=0; jutPosiMuBsHyung="posiJnHuSh1"; } 
+else if posiJnHuSh==-2 and  c>=jutPosiSljnGap-(PriceScale*posiJnHu2*posiJnHu2gamryul) then { jutPosiBhbs=-10; jutPosi=0; jutPosiMuBsHyung="posiJnHuSh2"; } 
+                         }
+
+
+
+## 입장 무 발생 후처리
+if pos(jutPosiBhbs)==10 then jutPosiJungSunjn=0;
+
+### 청산 후처리부 - 포지진후상황만
+if pos(jutPosiBhbs)==10 then {
+posiJnHuSh=0;    
+                             } 
+
+### 청산후 손익계산과 입장 8 처리
+if jutPosiBhbs==10 or jutPosiBhbs==10.1 then jutPosiHuSonik=c-jutPosiSljnGap;
+else if jutPosiBhbs==-10 or jutPosiBhbs==-10.1 then jutPosiHuSonik=jutPosiSljnGap-c;
+if pos(jutPosiBhbs)>=10 then {
+sonikNu= sonikNu+ jutPosiHuSonik;     
+if sonikNu>=sonikJungSan then { sonikJungSan=sonikNu; sonikJungGok=sonikJungSan;  }
+## 입장 1004 부여
+if jutPosiHuSonik<0 then sonikJungGok=sonikJungGok+jutPosiHuSonik;
+if sonikJungSan-sonikJungGok>= PriceScale*sonikJungSanGokCha then jutPosi=1004;    
+                             }
+
+
+### 시간과 실행 통제
+if time>= 54000 and time<=71500 then slheng=0;  # 시간 설정
+else slheng=1; 
+
+if time>=55000 and time<=70000 then {  # 시간 설정
+if jutPosi==1 then { jutPosiBhbs=10; jutPosi=0;  }  
+else if jutPosi==-1 then { jutPosiBhbs=-10; jutPosi=0;  }  
+                                     }    
+
+### 실행
+if slheng==1 then {
+if jutPosiBhbs==1 then buy(); 
+else if jutPosiBhbs==-1 then sell();
+                   }
+if jutPosiBhbs==10 then ExitLong();
+else if jutPosiBhbs==-10 then ExitShort();     
+
+
+    
+
+#### 출력
+MessageLog( "barindex %.f jutPosiBhbs %.f jutPosi %.f jutPosiMuBsHyung %s jutPosiHuSonik %.2f sonikNu %.2f sonikJungSan %.2f sonikJungGok %.2f", barindex, jutPosiBhbs, jutPosi, jutPosiMuBsHyung, jutPosiHuSonik, sonikNu, sonikJungSan, sonikJungGok );       
+    
+                                        
