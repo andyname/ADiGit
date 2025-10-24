@@ -1,0 +1,1064 @@
+## 예스스탁 예스트레이더 이지랭귀지 작성 파일
+
+inputs: 
+guIpSmGiPp(50), guIpSmGiPpDumGap(25),  guIpBgGiPp(400), guIpBgGiPpDumGap(100), 
+
+guGiGuCheongRyul(0.5), guGiGuDumRyul(0.25), 
+
+junjnSunBongGanGuk(10), 
+	
+hapIpHurumBoTick(14), soDongTick(0.01), susuryo(0.7);
+
+
+variables: 
+gu0IpDolSiC(0), gu0IpDolHhSiCcha(0), gu0IpGiJangBhbs(0), gu0IpGiJang1(0), gu0IpGiJang(0),
+gu0IpBhbs(0), gu0Ip(0), gu0IpSljnGap(0), gu0IpJnTmGap(0),
+gu0IpMuBsHyung(""),
+gu0IpJungSonik(0), gu0IpHuJungSonikNu2(0), gu0IpHuJungSonikNu1(0), gu0IpHuJungSonikNu(0),  gu0IpHuSonik(0), gu0IpHuSonikNu(0), 
+gu0IpHuJungSonikNuSunAvBhbs(0),
+
+gu1IpDolSiC(0), gu1IpDolHhSiCcha(0), gu1IpGiJangBhbs(0), gu1IpGiJang1(0), gu1IpGiJang(0),
+gu1IpBhbs(0), gu1Ip(0), gu1IpSljnGap(0), gu1IpJnTmGap(0),
+gu1IpMuBsHyung(""),
+gu1IpJungSonik(0), gu1IpHuJungSonikNu2(0), gu1IpHuJungSonikNu1(0), gu1IpHuJungSonikNu(0),  gu1IpHuSonik(0), gu1IpHuSonikNu(0), 
+gu1IpHuJungSonikNuSunAvBhbs(0),
+
+gu2IpDolSiC(0), gu2IpDolHhSiCcha(0), gu2IpGiJangBhbs(0), gu2IpGiJang1(0), gu2IpGiJang(0),
+gu2IpBhbs(0), gu2Ip(0), gu2IpSljnGap(0), gu2IpJnTmGap(0),
+gu2IpMuBsHyung(""),
+gu2IpJungSonik(0), gu2IpHuJungSonikNu2(0), gu2IpHuJungSonikNu1(0), gu2IpHuJungSonikNu(0),  gu2IpHuSonik(0), gu2IpHuSonikNu(0), 
+gu2IpHuJungSonikNuSunAvBhbs(0),
+
+gu3IpDolSiC(0), gu3IpDolHhSiCcha(0), gu3IpGiJangBhbs(0), gu3IpGiJang1(0), gu3IpGiJang(0),
+gu3IpBhbs(0), gu3Ip(0), gu3IpSljnGap(0), gu3IpJnTmGap(0),
+gu3IpMuBsHyung(""),
+gu3IpJungSonik(0), gu3IpHuJungSonikNu2(0), gu3IpHuJungSonikNu1(0), gu3IpHuJungSonikNu(0),  gu3IpHuSonik(0), gu3IpHuSonikNu(0), 
+gu3IpHuJungSonikNuSunAvBhbs(0),
+
+gu4IpDolSiC(0), gu4IpDolHhSiCcha(0), gu4IpGiJangBhbs(0), gu4IpGiJang1(0), gu4IpGiJang(0),
+gu4IpBhbs(0), gu4Ip(0), gu4IpSljnGap(0), gu4IpJnTmGap(0),
+gu4IpMuBsHyung(""),
+gu4IpJungSonik(0), gu4IpHuJungSonikNu2(0), gu4IpHuJungSonikNu1(0), gu4IpHuJungSonikNu(0),  gu4IpHuSonik(0), gu4IpHuSonikNu(0), 
+gu4IpHuJungSonikNuSunAvBhbs(0),
+
+gu5IpDolSiC(0), gu5IpDolHhSiCcha(0), gu5IpGiJangBhbs(0), gu5IpGiJang1(0), gu5IpGiJang(0),
+gu5IpBhbs(0), gu5Ip(0), gu5IpSljnGap(0), gu5IpJnTmGap(0),
+gu5IpMuBsHyung(""),
+gu5IpJungSonik(0), gu5IpHuJungSonikNu2(0), gu5IpHuJungSonikNu1(0), gu5IpHuJungSonikNu(0),  gu5IpHuSonik(0), gu5IpHuSonikNu(0), 
+gu5IpHuJungSonikNuSunAvBhbs(0),
+
+gu6IpDolSiC(0), gu6IpDolHhSiCcha(0), gu6IpGiJangBhbs(0), gu6IpGiJang1(0), gu6IpGiJang(0),
+gu6IpBhbs(0), gu6Ip(0), gu6IpSljnGap(0), gu6IpJnTmGap(0),
+gu6IpMuBsHyung(""),
+gu6IpJungSonik(0), gu6IpHuJungSonikNu2(0), gu6IpHuJungSonikNu1(0), gu6IpHuJungSonikNu(0),  gu6IpHuSonik(0), gu6IpHuSonikNu(0), 
+gu6IpHuJungSonikNuSunAvBhbs(0),
+
+gu7IpDolSiC(0), gu7IpDolHhSiCcha(0), gu7IpGiJangBhbs(0), gu7IpGiJang1(0), gu7IpGiJang(0),
+gu7IpBhbs(0), gu7Ip(0), gu7IpSljnGap(0), gu7IpJnTmGap(0),
+gu7IpMuBsHyung(""),
+gu7IpJungSonik(0), gu7IpHuJungSonikNu2(0), gu7IpHuJungSonikNu1(0), gu7IpHuJungSonikNu(0),  gu7IpHuSonik(0), gu7IpHuSonikNu(0), 
+gu7IpHuJungSonikNuSunAvBhbs(0),
+
+gu8IpDolSiC(0), gu8IpDolHhSiCcha(0), gu8IpGiJangBhbs(0), gu8IpGiJang1(0), gu8IpGiJang(0),
+gu8IpBhbs(0), gu8Ip(0), gu8IpSljnGap(0), gu8IpJnTmGap(0),
+gu8IpMuBsHyung(""),
+gu8IpJungSonik(0), gu8IpHuJungSonikNu2(0), gu8IpHuJungSonikNu1(0), gu8IpHuJungSonikNu(0),  gu8IpHuSonik(0), gu8IpHuSonikNu(0), 
+gu8IpHuJungSonikNuSunAvBhbs(0),
+
+gu9IpDolSiC(0), gu9IpDolHhSiCcha(0), gu9IpGiJangBhbs(0), gu9IpGiJang1(0), gu9IpGiJang(0),
+gu9IpBhbs(0), gu9Ip(0), gu9IpSljnGap(0), gu9IpJnTmGap(0),
+gu9IpMuBsHyung(""),
+gu9IpJungSonik(0), gu9IpHuJungSonikNu2(0), gu9IpHuJungSonikNu1(0), gu9IpHuJungSonikNu(0),  gu9IpHuSonik(0), gu9IpHuSonikNu(0), 
+gu9IpHuJungSonikNuSunAvBhbs(0),
+
+junJnSunBhbs(0), 
+
+gu0IpHuJungSonikNuJunJnGap(0), gu0IpHuJungSonikNuJunJnCha(0),
+gu1IpHuJungSonikNuJunJnGap(0), gu1IpHuJungSonikNuJunJnCha(0),
+gu2IpHuJungSonikNuJunJnGap(0), gu2IpHuJungSonikNuJunJnCha(0),
+gu3IpHuJungSonikNuJunJnGap(0), gu3IpHuJungSonikNuJunJnCha(0),
+gu4IpHuJungSonikNuJunJnGap(0), gu4IpHuJungSonikNuJunJnCha(0),
+gu5IpHuJungSonikNuJunJnGap(0), gu5IpHuJungSonikNuJunJnCha(0),
+gu6IpHuJungSonikNuJunJnGap(0), gu6IpHuJungSonikNuJunJnCha(0),
+gu7IpHuJungSonikNuJunJnGap(0), gu7IpHuJungSonikNuJunJnCha(0),
+gu8IpHuJungSonikNuJunJnGap(0), gu8IpHuJungSonikNuJunJnCha(0),
+gu9IpHuJungSonikNuJunJnGap(0), gu9IpHuJungSonikNuJunJnCha(0),
+
+
+hapIpBhbs(-1004), hapIpHurumBhbs(-1004), hapIpHurum1(-1), hapIpHurum(-1), 
+hapIp1(0), hapIp(0), hhYuIp(0), hhSeIp(0),
+
+deIpHuJungSonikNuJunJnChaGap(0), deJunJnChaGapWc1(0), deJunJnChaGapWc(0),  
+hhIpHuJungSonikNuJunJnCha(0), 
+
+slsiSigan(0), ffa(0);
+
+
+arrays: guIpPp[10](0);
+
+
+
+#### 시간통제 파견부	
+slsiSigan= 880;
+if time>=54000 and time<=81000 then slsiSigan= 80;
+
+
+##### 하가르 tmGgg 입장강 파견부 - pp
+guIpPp[0]= guIpSmGiPp- guIpSmGiPpDumGap;
+guIpPp[1]= guIpSmGiPp;
+guIpPp[2]= guIpSmGiPp+ guIpSmGiPpDumGap;
+	
+guIpPp[3]= guIpBgGiPp- guIpBgGiPpDumGap* 3;
+guIpPp[4]= guIpBgGiPp- guIpBgGiPpDumGap* 2;
+guIpPp[5]= guIpBgGiPp- guIpBgGiPpDumGap* 1;
+guIpPp[6]= guIpBgGiPp;
+guIpPp[7]= guIpBgGiPp+ guIpBgGiPpDumGap* 1;
+guIpPp[8]= guIpBgGiPp+ guIpBgGiPpDumGap* 2;
+guIpPp[9]= guIpBgGiPp+ guIpBgGiPpDumGap* 3;
+
+### pp 최소값 점검
+for ffa=0 to 9 { if guIpPp[ffa]<=2 then guIpPp[ffa]=2;  }
+
+
+############################  입장강 ############################
+####### 거울 진입청산 0 입장산
+gu0IpBhbs=0;  # 보편처리일
+
+
+### 입장 유 발생
+if gu0Ip==0 and crossup(c, AD_gu(guIpPp[0]) ) then 
+{ gu0IpBhbs=1; gu0Ip=1;  gu0IpSljnGap=c;  gu0IpJnTmGap=AD_gu(guIpPp[0]);  }  
+else if gu0Ip==0 and crossdown(c, AD_gu(guIpPp[0]) ) then 
+{ gu0IpBhbs=-1; gu0Ip=-1;  gu0IpSljnGap=c;  gu0IpJnTmGap=AD_gu(guIpPp[0]);  }  
+	
+
+
+### 입장 무 발생
+else if gu0Ip==1 then {
+if AD_gu(guIpPp[0]* guGiGuCheongRyul )>= gu0IpJnTmGap+ soDongTick* (guIpPp[0]* guGiGuDumRyul ) and  crossdown(c, guIpPp[0]* guGiGuCheongRyul ) then { gu0IpBhbs=10; gu0Ip=0; gu0IpMuBsHyung="sunjn";  }
+else if c<= gu0IpSljnGap- soDongTick* (guIpPp[0]* guGiGuDumRyul ) then { gu0IpBhbs=10; gu0Ip=0; gu0IpMuBsHyung="hutoe";  }        
+}
+else if gu0Ip==-1 then {
+if AD_gu(guIpPp[0]* guGiGuCheongRyul )<= gu0IpJnTmGap- soDongTick* (guIpPp[0]* guGiGuDumRyul ) and  crossup(c, guIpPp[0]* guGiGuCheongRyul ) then { gu0IpBhbs=-10; gu0Ip=0; gu0IpMuBsHyung="sunjn";  }
+else if c>= gu0IpSljnGap+ soDongTick* (guIpPp[0]* guGiGuDumRyul ) then { gu0IpBhbs=-10; gu0Ip=0; gu0IpMuBsHyung="hutoe";  }        
+}
+
+
+	
+
+##### 실행 시간통제부
+if slsiSigan==0 then { gu0IpBhbs=0; gu0Ip=1004;  }   
+else if slsiSigan==80 then {
+if gu0Ip==1 then { gu0IpBhbs=10; gu0Ip=1004;  }  
+else if gu0Ip==-1 then { gu0IpBhbs=-10; gu0Ip=1004;  }  
+}
+else if slsiSigan==880 and gu0Ip==1004 then gu0Ip=0;  # 다시 진입 허용
+
+
+
+##### 손익과 입장 처리 종합부
+if pos(gu0IpBhbs)!=10 and pos(gu0Ip)==1 then {
+if gu0Ip==1 then gu0IpJungSonik=c-gu0IpSljnGap -SoDongTick*susuryo;    
+else if gu0Ip==-1 then gu0IpJungSonik=gu0IpSljnGap-c -SoDongTick*susuryo;
+## 입장후중손익누개
+gu0IpHuJungSonikNu2= gu0IpHuJungSonikNu1;
+gu0IpHuJungSonikNu1= gu0IpHuJungSonikNu;
+gu0IpHuJungSonikNu= gu0IpHuSonikNu+gu0IpJungSonik;       
+}
+
+### 청산후 손익계산과 입장 8 처리
+else if pos(gu0IpBhbs)==10 then {
+## 조입장후손익
+if gu0IpBhbs==10 then gu0IpHuSonik=c-gu0IpSljnGap -SoDongTick*susuryo;
+else if gu0IpBhbs==-10 then gu0IpHuSonik=gu0IpSljnGap-c -SoDongTick*susuryo;
+## 조입장후손익누개부
+gu0IpHuSonikNu= gu0IpHuSonikNu+ gu0IpHuSonik;     
+## 입장후중손익누개
+gu0IpHuJungSonikNu2= gu0IpHuJungSonikNu1;
+gu0IpHuJungSonikNu1= gu0IpHuJungSonikNu;
+gu0IpHuJungSonikNu= gu0IpHuSonikNu;                                                             
+## 청산 후처리부 - 처리일
+gu0IpJungSonik=0;                                                            
+}
+
+## 입장후중손익누개 선 꺽임 변화발생 파악부 
+gu0IpHuJungSonikNuSunAvBhbs= 0;  # 보편처리일
+if gu0IpHuJungSonikNu1- gu0IpHuJungSonikNu2<=0 and  gu0IpHuJungSonikNu- gu0IpHuJungSonikNu1> 0 then gu0IpHuJungSonikNuSunAvBhbs= 8111; 
+else if gu0IpHuJungSonikNu1- gu0IpHuJungSonikNu2>=0 and  gu0IpHuJungSonikNu- gu0IpHuJungSonikNu1< 0 then gu0IpHuJungSonikNuSunAvBhbs= 1101;
+
+
+
+
+####### 거울 진입청산 1 입장산
+gu1IpBhbs=0;  # 보편처리일
+
+
+### 입장 유 발생
+if gu1Ip==0 and crossup(c, AD_gu(guIpPp[1]) ) then 
+{ gu1IpBhbs=1; gu1Ip=1;  gu1IpSljnGap=c;  gu1IpJnTmGap=AD_gu(guIpPp[1]);  }  
+else if gu1Ip==0 and crossdown(c, AD_gu(guIpPp[1]) ) then 
+{ gu1IpBhbs=-1; gu1Ip=-1;  gu1IpSljnGap=c;  gu1IpJnTmGap=AD_gu(guIpPp[1]);  }  
+
+
+
+### 입장 무 발생
+else if gu1Ip==1 then {
+if AD_gu(guIpPp[1]* guGiGuCheongRyul )>= gu1IpJnTmGap+ soDongTick* (guIpPp[1]* guGiGuDumRyul ) and  crossdown(c, guIpPp[1]* guGiGuCheongRyul ) then { gu1IpBhbs=10; gu1Ip=0; gu1IpMuBsHyung="sunjn";  }
+else if c<= gu1IpSljnGap- soDongTick* (guIpPp[1]* guGiGuDumRyul ) then { gu1IpBhbs=10; gu1Ip=0; gu1IpMuBsHyung="hutoe";  }        
+}
+else if gu1Ip==-1 then {
+if AD_gu(guIpPp[1]* guGiGuCheongRyul )<= gu1IpJnTmGap- soDongTick* (guIpPp[1]* guGiGuDumRyul ) and  crossup(c, guIpPp[1]* guGiGuCheongRyul ) then { gu1IpBhbs=-10; gu1Ip=0; gu1IpMuBsHyung="sunjn";  }
+else if c>= gu1IpSljnGap+ soDongTick* (guIpPp[1]* guGiGuDumRyul ) then { gu1IpBhbs=-10; gu1Ip=0; gu1IpMuBsHyung="hutoe";  }        
+}
+
+
+	
+
+##### 실행 시간통제부
+if slsiSigan==0 then { gu1IpBhbs=0; gu1Ip=1004;  }   
+else if slsiSigan==80 then {
+if gu1Ip==1 then { gu1IpBhbs=10; gu1Ip=1004;  }  
+else if gu1Ip==-1 then { gu1IpBhbs=-10; gu1Ip=1004;  }  
+}
+else if slsiSigan==880 and gu1Ip==1004 then gu1Ip=0;  # 다시 진입 허용
+
+
+
+##### 손익과 입장 처리 종합부
+if pos(gu1IpBhbs)!=10 and pos(gu1Ip)==1 then {
+if gu1Ip==1 then gu1IpJungSonik=c-gu1IpSljnGap -SoDongTick*susuryo;    
+else if gu1Ip==-1 then gu1IpJungSonik=gu1IpSljnGap-c -SoDongTick*susuryo;
+## 입장후중손익누개
+gu1IpHuJungSonikNu2= gu1IpHuJungSonikNu1;
+gu1IpHuJungSonikNu1= gu1IpHuJungSonikNu;
+gu1IpHuJungSonikNu= gu1IpHuSonikNu+gu1IpJungSonik;       
+}
+
+### 청산후 손익계산과 입장 8 처리
+else if pos(gu1IpBhbs)==10 then {
+## 조입장후손익
+if gu1IpBhbs==10 then gu1IpHuSonik=c-gu1IpSljnGap -SoDongTick*susuryo;
+else if gu1IpBhbs==-10 then gu1IpHuSonik=gu1IpSljnGap-c -SoDongTick*susuryo;
+## 조입장후손익누개부
+gu1IpHuSonikNu= gu1IpHuSonikNu+ gu1IpHuSonik;     
+## 입장후중손익누개
+gu1IpHuJungSonikNu2= gu1IpHuJungSonikNu1;
+gu1IpHuJungSonikNu1= gu1IpHuJungSonikNu;
+gu1IpHuJungSonikNu= gu1IpHuSonikNu;                                                             
+## 청산 후처리부 - 처리일
+gu1IpJungSonik=0;                                                            
+}
+
+## 입장후중손익누개 선 꺽임 변화발생 파악부 
+gu1IpHuJungSonikNuSunAvBhbs= 0;  # 보편처리일
+if gu1IpHuJungSonikNu1- gu1IpHuJungSonikNu2<=0 and  gu1IpHuJungSonikNu- gu1IpHuJungSonikNu1> 0 then gu1IpHuJungSonikNuSunAvBhbs= 8111; 
+else if gu1IpHuJungSonikNu1- gu1IpHuJungSonikNu2>=0 and  gu1IpHuJungSonikNu- gu1IpHuJungSonikNu1< 0 then gu1IpHuJungSonikNuSunAvBhbs= 1101;
+
+
+
+
+
+####### 거울 진입청산 2 입장산
+gu2IpBhbs=0;  # 보편처리일
+
+
+### 입장 유 발생
+if gu2Ip==0 and crossup(c, AD_gu(guIpPp[2]) ) then 
+{ gu2IpBhbs=1; gu2Ip=1;  gu2IpSljnGap=c;  gu2IpJnTmGap=AD_gu(guIpPp[2]);  }  
+else if gu2Ip==0 and crossdown(c, AD_gu(guIpPp[2]) ) then 
+{ gu2IpBhbs=-1; gu2Ip=-1;  gu2IpSljnGap=c;  gu2IpJnTmGap=AD_gu(guIpPp[2]);  }  
+
+
+
+### 입장 무 발생
+else if gu2Ip==1 then {
+if AD_gu(guIpPp[2]* guGiGuCheongRyul )>= gu2IpJnTmGap+ soDongTick* (guIpPp[2]* guGiGuDumRyul ) and  crossdown(c, guIpPp[2]* guGiGuCheongRyul ) then { gu2IpBhbs=10; gu2Ip=0; gu2IpMuBsHyung="sunjn";  }
+else if c<= gu2IpSljnGap- soDongTick* (guIpPp[2]* guGiGuDumRyul ) then { gu2IpBhbs=10; gu2Ip=0; gu2IpMuBsHyung="hutoe";  }        
+}
+else if gu2Ip==-1 then {
+if AD_gu(guIpPp[2]* guGiGuCheongRyul )<= gu2IpJnTmGap- soDongTick* (guIpPp[2]* guGiGuDumRyul ) and  crossup(c, guIpPp[2]* guGiGuCheongRyul ) then { gu2IpBhbs=-10; gu2Ip=0; gu2IpMuBsHyung="sunjn";  }
+else if c>= gu2IpSljnGap+ soDongTick* (guIpPp[2]* guGiGuDumRyul ) then { gu2IpBhbs=-10; gu2Ip=0; gu2IpMuBsHyung="hutoe";  }        
+}
+
+
+	
+
+##### 실행 시간통제부
+if slsiSigan==0 then { gu2IpBhbs=0; gu2Ip=1004;  }   
+else if slsiSigan==80 then {
+if gu2Ip==1 then { gu2IpBhbs=10; gu2Ip=1004;  }  
+else if gu2Ip==-1 then { gu2IpBhbs=-10; gu2Ip=1004;  }  
+}
+else if slsiSigan==880 and gu2Ip==1004 then gu2Ip=0;  # 다시 진입 허용
+
+
+
+##### 손익과 입장 처리 종합부
+if pos(gu2IpBhbs)!=10 and pos(gu2Ip)==1 then {
+if gu2Ip==1 then gu2IpJungSonik=c-gu2IpSljnGap -SoDongTick*susuryo;    
+else if gu2Ip==-1 then gu2IpJungSonik=gu2IpSljnGap-c -SoDongTick*susuryo;
+## 입장후중손익누개
+gu2IpHuJungSonikNu2= gu2IpHuJungSonikNu1;
+gu2IpHuJungSonikNu1= gu2IpHuJungSonikNu;
+gu2IpHuJungSonikNu= gu2IpHuSonikNu+gu2IpJungSonik;       
+}
+
+### 청산후 손익계산과 입장 8 처리
+else if pos(gu2IpBhbs)==10 then {
+## 조입장후손익
+if gu2IpBhbs==10 then gu2IpHuSonik=c-gu2IpSljnGap -SoDongTick*susuryo;
+else if gu2IpBhbs==-10 then gu2IpHuSonik=gu2IpSljnGap-c -SoDongTick*susuryo;
+## 조입장후손익누개부
+gu2IpHuSonikNu= gu2IpHuSonikNu+ gu2IpHuSonik;     
+## 입장후중손익누개
+gu2IpHuJungSonikNu2= gu2IpHuJungSonikNu1;
+gu2IpHuJungSonikNu1= gu2IpHuJungSonikNu;
+gu2IpHuJungSonikNu= gu2IpHuSonikNu;                                                             
+## 청산 후처리부 - 처리일
+gu2IpJungSonik=0;                                                            
+}
+
+## 입장후중손익누개 선 꺽임 변화발생 파악부 
+gu2IpHuJungSonikNuSunAvBhbs= 0;  # 보편처리일
+if gu2IpHuJungSonikNu1- gu2IpHuJungSonikNu2<=0 and  gu2IpHuJungSonikNu- gu2IpHuJungSonikNu1> 0 then gu2IpHuJungSonikNuSunAvBhbs= 8111; 
+else if gu2IpHuJungSonikNu1- gu2IpHuJungSonikNu2>=0 and  gu2IpHuJungSonikNu- gu2IpHuJungSonikNu1< 0 then gu2IpHuJungSonikNuSunAvBhbs= 1101;
+
+
+
+
+####### 거울 진입청산 3 입장산
+gu3IpBhbs=0;  # 보편처리일
+
+
+### 입장 유 발생
+if gu3Ip==0 and crossup(c, AD_gu(guIpPp[3]) ) then 
+{ gu3IpBhbs=1; gu3Ip=1;  gu3IpSljnGap=c;  gu3IpJnTmGap=AD_gu(guIpPp[3]);  }  
+else if gu3Ip==0 and crossdown(c, AD_gu(guIpPp[3]) ) then 
+{ gu3IpBhbs=-1; gu3Ip=-1;  gu3IpSljnGap=c;  gu3IpJnTmGap=AD_gu(guIpPp[3]);  }  
+
+
+
+### 입장 무 발생
+else if gu3Ip==1 then {
+if AD_gu(guIpPp[3]* guGiGuCheongRyul )>= gu3IpJnTmGap+ soDongTick* (guIpPp[3]* guGiGuDumRyul ) and  crossdown(c, guIpPp[3]* guGiGuCheongRyul ) then { gu3IpBhbs=10; gu3Ip=0; gu3IpMuBsHyung="sunjn";  }
+else if c<= gu3IpSljnGap- soDongTick* (guIpPp[3]* guGiGuDumRyul ) then { gu3IpBhbs=10; gu3Ip=0; gu3IpMuBsHyung="hutoe";  }        
+}
+else if gu3Ip==-1 then {
+if AD_gu(guIpPp[3]* guGiGuCheongRyul )<= gu3IpJnTmGap- soDongTick* (guIpPp[3]* guGiGuDumRyul ) and  crossup(c, guIpPp[3]* guGiGuCheongRyul ) then { gu3IpBhbs=-10; gu3Ip=0; gu3IpMuBsHyung="sunjn";  }
+else if c>= gu3IpSljnGap+ soDongTick* (guIpPp[3]* guGiGuDumRyul ) then { gu3IpBhbs=-10; gu3Ip=0; gu3IpMuBsHyung="hutoe";  }        
+}
+
+
+	
+
+##### 실행 시간통제부
+if slsiSigan==0 then { gu3IpBhbs=0; gu3Ip=1004;  }   
+else if slsiSigan==80 then {
+if gu3Ip==1 then { gu3IpBhbs=10; gu3Ip=1004;  }  
+else if gu3Ip==-1 then { gu3IpBhbs=-10; gu3Ip=1004;  }  
+}
+else if slsiSigan==880 and gu3Ip==1004 then gu3Ip=0;  # 다시 진입 허용
+
+
+
+##### 손익과 입장 처리 종합부
+if pos(gu3IpBhbs)!=10 and pos(gu3Ip)==1 then {
+if gu3Ip==1 then gu3IpJungSonik=c-gu3IpSljnGap -SoDongTick*susuryo;    
+else if gu3Ip==-1 then gu3IpJungSonik=gu3IpSljnGap-c -SoDongTick*susuryo;
+## 입장후중손익누개
+gu3IpHuJungSonikNu2= gu3IpHuJungSonikNu1;
+gu3IpHuJungSonikNu1= gu3IpHuJungSonikNu;
+gu3IpHuJungSonikNu= gu3IpHuSonikNu+gu3IpJungSonik;       
+}
+
+### 청산후 손익계산과 입장 8 처리
+else if pos(gu3IpBhbs)==10 then {
+## 조입장후손익
+if gu3IpBhbs==10 then gu3IpHuSonik=c-gu3IpSljnGap -SoDongTick*susuryo;
+else if gu3IpBhbs==-10 then gu3IpHuSonik=gu3IpSljnGap-c -SoDongTick*susuryo;
+## 조입장후손익누개부
+gu3IpHuSonikNu= gu3IpHuSonikNu+ gu3IpHuSonik;     
+## 입장후중손익누개
+gu3IpHuJungSonikNu2= gu3IpHuJungSonikNu1;
+gu3IpHuJungSonikNu1= gu3IpHuJungSonikNu;
+gu3IpHuJungSonikNu= gu3IpHuSonikNu;                                                             
+## 청산 후처리부 - 처리일
+gu3IpJungSonik=0;                                                            
+}
+
+## 입장후중손익누개 선 꺽임 변화발생 파악부 
+gu3IpHuJungSonikNuSunAvBhbs= 0;  # 보편처리일
+if gu3IpHuJungSonikNu1- gu3IpHuJungSonikNu2<=0 and  gu3IpHuJungSonikNu- gu3IpHuJungSonikNu1> 0 then gu3IpHuJungSonikNuSunAvBhbs= 8111; 
+else if gu3IpHuJungSonikNu1- gu3IpHuJungSonikNu2>=0 and  gu3IpHuJungSonikNu- gu3IpHuJungSonikNu1< 0 then gu3IpHuJungSonikNuSunAvBhbs= 1101;
+
+
+
+
+####### 거울 진입청산 4 입장산
+gu4IpBhbs=0;  # 보편처리일
+
+
+### 입장 유 발생
+if gu4Ip==0 and crossup(c, AD_gu(guIpPp[4]) ) then 
+{ gu4IpBhbs=1; gu4Ip=1;  gu4IpSljnGap=c;  gu4IpJnTmGap=AD_gu(guIpPp[4]);  }  
+else if gu4Ip==0 and crossdown(c, AD_gu(guIpPp[4]) ) then 
+{ gu4IpBhbs=-1; gu4Ip=-1;  gu4IpSljnGap=c;  gu4IpJnTmGap=AD_gu(guIpPp[4]);  }  
+
+
+
+### 입장 무 발생
+else if gu4Ip==1 then {
+if AD_gu(guIpPp[4]* guGiGuCheongRyul )>= gu4IpJnTmGap+ soDongTick* (guIpPp[4]* guGiGuDumRyul ) and  crossdown(c, guIpPp[4]* guGiGuCheongRyul ) then { gu4IpBhbs=10; gu4Ip=0; gu4IpMuBsHyung="sunjn";  }
+else if c<= gu4IpSljnGap- soDongTick* (guIpPp[4]* guGiGuDumRyul ) then { gu4IpBhbs=10; gu4Ip=0; gu4IpMuBsHyung="hutoe";  }        
+}
+else if gu4Ip==-1 then {
+if AD_gu(guIpPp[4]* guGiGuCheongRyul )<= gu4IpJnTmGap- soDongTick* (guIpPp[4]* guGiGuDumRyul ) and  crossup(c, guIpPp[4]* guGiGuCheongRyul ) then { gu4IpBhbs=-10; gu4Ip=0; gu4IpMuBsHyung="sunjn";  }
+else if c>= gu4IpSljnGap+ soDongTick* (guIpPp[4]* guGiGuDumRyul ) then { gu4IpBhbs=-10; gu4Ip=0; gu4IpMuBsHyung="hutoe";  }        
+}
+
+
+	
+
+##### 실행 시간통제부
+if slsiSigan==0 then { gu4IpBhbs=0; gu4Ip=1004;  }   
+else if slsiSigan==80 then {
+if gu4Ip==1 then { gu4IpBhbs=10; gu4Ip=1004;  }  
+else if gu4Ip==-1 then { gu4IpBhbs=-10; gu4Ip=1004;  }  
+}
+else if slsiSigan==880 and gu4Ip==1004 then gu4Ip=0;  # 다시 진입 허용
+
+
+
+##### 손익과 입장 처리 종합부
+if pos(gu4IpBhbs)!=10 and pos(gu4Ip)==1 then {
+if gu4Ip==1 then gu4IpJungSonik=c-gu4IpSljnGap -SoDongTick*susuryo;    
+else if gu4Ip==-1 then gu4IpJungSonik=gu4IpSljnGap-c -SoDongTick*susuryo;
+## 입장후중손익누개
+gu4IpHuJungSonikNu2= gu4IpHuJungSonikNu1;
+gu4IpHuJungSonikNu1= gu4IpHuJungSonikNu;
+gu4IpHuJungSonikNu= gu4IpHuSonikNu+gu4IpJungSonik;       
+}
+
+### 청산후 손익계산과 입장 8 처리
+else if pos(gu4IpBhbs)==10 then {
+## 조입장후손익
+if gu4IpBhbs==10 then gu4IpHuSonik=c-gu4IpSljnGap -SoDongTick*susuryo;
+else if gu4IpBhbs==-10 then gu4IpHuSonik=gu4IpSljnGap-c -SoDongTick*susuryo;
+## 조입장후손익누개부
+gu4IpHuSonikNu= gu4IpHuSonikNu+ gu4IpHuSonik;     
+## 입장후중손익누개
+gu4IpHuJungSonikNu2= gu4IpHuJungSonikNu1;
+gu4IpHuJungSonikNu1= gu4IpHuJungSonikNu;
+gu4IpHuJungSonikNu= gu4IpHuSonikNu;                                                             
+## 청산 후처리부 - 처리일
+gu4IpJungSonik=0;                                                            
+}
+
+## 입장후중손익누개 선 꺽임 변화발생 파악부 
+gu4IpHuJungSonikNuSunAvBhbs= 0;  # 보편처리일
+if gu4IpHuJungSonikNu1- gu4IpHuJungSonikNu2<=0 and  gu4IpHuJungSonikNu- gu4IpHuJungSonikNu1> 0 then gu4IpHuJungSonikNuSunAvBhbs= 8111; 
+else if gu4IpHuJungSonikNu1- gu4IpHuJungSonikNu2>=0 and  gu4IpHuJungSonikNu- gu4IpHuJungSonikNu1< 0 then gu4IpHuJungSonikNuSunAvBhbs= 1101;
+
+
+
+
+####### 거울 진입청산 5 입장산
+gu5IpBhbs=0;  # 보편처리일
+
+
+### 입장 유 발생
+if gu5Ip==0 and crossup(c, AD_gu(guIpPp[5]) ) then 
+{ gu5IpBhbs=1; gu5Ip=1;  gu5IpSljnGap=c;  gu5IpJnTmGap=AD_gu(guIpPp[5]);  }  
+else if gu5Ip==0 and crossdown(c, AD_gu(guIpPp[5]) ) then 
+{ gu5IpBhbs=-1; gu5Ip=-1;  gu5IpSljnGap=c;  gu5IpJnTmGap=AD_gu(guIpPp[5]);  }  
+
+
+
+### 입장 무 발생
+else if gu5Ip==1 then {
+if AD_gu(guIpPp[5]* guGiGuCheongRyul )>= gu5IpJnTmGap+ soDongTick* (guIpPp[5]* guGiGuDumRyul ) and  crossdown(c, guIpPp[5]* guGiGuCheongRyul ) then { gu5IpBhbs=10; gu5Ip=0; gu5IpMuBsHyung="sunjn";  }
+else if c<= gu5IpSljnGap- soDongTick* (guIpPp[5]* guGiGuDumRyul ) then { gu5IpBhbs=10; gu5Ip=0; gu5IpMuBsHyung="hutoe";  }        
+}
+else if gu5Ip==-1 then {
+if AD_gu(guIpPp[5]* guGiGuCheongRyul )<= gu5IpJnTmGap- soDongTick* (guIpPp[5]* guGiGuDumRyul ) and  crossup(c, guIpPp[5]* guGiGuCheongRyul ) then { gu5IpBhbs=-10; gu5Ip=0; gu5IpMuBsHyung="sunjn";  }
+else if c>= gu5IpSljnGap+ soDongTick* (guIpPp[5]* guGiGuDumRyul ) then { gu5IpBhbs=-10; gu5Ip=0; gu5IpMuBsHyung="hutoe";  }        
+}
+
+
+	
+
+##### 실행 시간통제부
+if slsiSigan==0 then { gu5IpBhbs=0; gu5Ip=1004;  }   
+else if slsiSigan==80 then {
+if gu5Ip==1 then { gu5IpBhbs=10; gu5Ip=1004;  }  
+else if gu5Ip==-1 then { gu5IpBhbs=-10; gu5Ip=1004;  }  
+}
+else if slsiSigan==880 and gu5Ip==1004 then gu5Ip=0;  # 다시 진입 허용
+
+
+
+##### 손익과 입장 처리 종합부
+if pos(gu5IpBhbs)!=10 and pos(gu5Ip)==1 then {
+if gu5Ip==1 then gu5IpJungSonik=c-gu5IpSljnGap -SoDongTick*susuryo;    
+else if gu5Ip==-1 then gu5IpJungSonik=gu5IpSljnGap-c -SoDongTick*susuryo;
+## 입장후중손익누개
+gu5IpHuJungSonikNu2= gu5IpHuJungSonikNu1;
+gu5IpHuJungSonikNu1= gu5IpHuJungSonikNu;
+gu5IpHuJungSonikNu= gu5IpHuSonikNu+gu5IpJungSonik;       
+}
+
+### 청산후 손익계산과 입장 8 처리
+else if pos(gu5IpBhbs)==10 then {
+## 조입장후손익
+if gu5IpBhbs==10 then gu5IpHuSonik=c-gu5IpSljnGap -SoDongTick*susuryo;
+else if gu5IpBhbs==-10 then gu5IpHuSonik=gu5IpSljnGap-c -SoDongTick*susuryo;
+## 조입장후손익누개부
+gu5IpHuSonikNu= gu5IpHuSonikNu+ gu5IpHuSonik;     
+## 입장후중손익누개
+gu5IpHuJungSonikNu2= gu5IpHuJungSonikNu1;
+gu5IpHuJungSonikNu1= gu5IpHuJungSonikNu;
+gu5IpHuJungSonikNu= gu5IpHuSonikNu;                                                             
+## 청산 후처리부 - 처리일
+gu5IpJungSonik=0;                                                            
+}
+
+## 입장후중손익누개 선 꺽임 변화발생 파악부 
+gu5IpHuJungSonikNuSunAvBhbs= 0;  # 보편처리일
+if gu5IpHuJungSonikNu1- gu5IpHuJungSonikNu2<=0 and  gu5IpHuJungSonikNu- gu5IpHuJungSonikNu1> 0 then gu5IpHuJungSonikNuSunAvBhbs= 8111; 
+else if gu5IpHuJungSonikNu1- gu5IpHuJungSonikNu2>=0 and  gu5IpHuJungSonikNu- gu5IpHuJungSonikNu1< 0 then gu5IpHuJungSonikNuSunAvBhbs= 1101;
+
+
+
+
+####### 거울 진입청산 6 입장산
+gu6IpBhbs=0;  # 보편처리일
+
+
+### 입장 유 발생
+if gu6Ip==0 and crossup(c, AD_gu(guIpPp[6]) ) then 
+{ gu6IpBhbs=1; gu6Ip=1;  gu6IpSljnGap=c;  gu6IpJnTmGap=AD_gu(guIpPp[6]);  }  
+else if gu6Ip==0 and crossdown(c, AD_gu(guIpPp[6]) ) then 
+{ gu6IpBhbs=-1; gu6Ip=-1;  gu6IpSljnGap=c;  gu6IpJnTmGap=AD_gu(guIpPp[6]);  }  
+
+
+
+### 입장 무 발생
+else if gu6Ip==1 then {
+if AD_gu(guIpPp[6]* guGiGuCheongRyul )>= gu6IpJnTmGap+ soDongTick* (guIpPp[6]* guGiGuDumRyul ) and  crossdown(c, guIpPp[6]* guGiGuCheongRyul ) then { gu6IpBhbs=10; gu6Ip=0; gu6IpMuBsHyung="sunjn";  }
+else if c<= gu6IpSljnGap- soDongTick* (guIpPp[6]* guGiGuDumRyul ) then { gu6IpBhbs=10; gu6Ip=0; gu6IpMuBsHyung="hutoe";  }        
+}
+else if gu6Ip==-1 then {
+if AD_gu(guIpPp[6]* guGiGuCheongRyul )<= gu6IpJnTmGap- soDongTick* (guIpPp[6]* guGiGuDumRyul ) and  crossup(c, guIpPp[6]* guGiGuCheongRyul ) then { gu6IpBhbs=-10; gu6Ip=0; gu6IpMuBsHyung="sunjn";  }
+else if c>= gu6IpSljnGap+ soDongTick* (guIpPp[6]* guGiGuDumRyul ) then { gu6IpBhbs=-10; gu6Ip=0; gu6IpMuBsHyung="hutoe";  }        
+}
+
+
+	
+
+##### 실행 시간통제부
+if slsiSigan==0 then { gu6IpBhbs=0; gu6Ip=1004;  }   
+else if slsiSigan==80 then {
+if gu6Ip==1 then { gu6IpBhbs=10; gu6Ip=1004;  }  
+else if gu6Ip==-1 then { gu6IpBhbs=-10; gu6Ip=1004;  }  
+}
+else if slsiSigan==880 and gu6Ip==1004 then gu6Ip=0;  # 다시 진입 허용
+
+
+
+##### 손익과 입장 처리 종합부
+if pos(gu6IpBhbs)!=10 and pos(gu6Ip)==1 then {
+if gu6Ip==1 then gu6IpJungSonik=c-gu6IpSljnGap -SoDongTick*susuryo;    
+else if gu6Ip==-1 then gu6IpJungSonik=gu6IpSljnGap-c -SoDongTick*susuryo;
+## 입장후중손익누개
+gu6IpHuJungSonikNu2= gu6IpHuJungSonikNu1;
+gu6IpHuJungSonikNu1= gu6IpHuJungSonikNu;
+gu6IpHuJungSonikNu= gu6IpHuSonikNu+gu6IpJungSonik;       
+}
+
+### 청산후 손익계산과 입장 8 처리
+else if pos(gu6IpBhbs)==10 then {
+## 조입장후손익
+if gu6IpBhbs==10 then gu6IpHuSonik=c-gu6IpSljnGap -SoDongTick*susuryo;
+else if gu6IpBhbs==-10 then gu6IpHuSonik=gu6IpSljnGap-c -SoDongTick*susuryo;
+## 조입장후손익누개부
+gu6IpHuSonikNu= gu6IpHuSonikNu+ gu6IpHuSonik;     
+## 입장후중손익누개
+gu6IpHuJungSonikNu2= gu6IpHuJungSonikNu1;
+gu6IpHuJungSonikNu1= gu6IpHuJungSonikNu;
+gu6IpHuJungSonikNu= gu6IpHuSonikNu;                                                             
+## 청산 후처리부 - 처리일
+gu6IpJungSonik=0;                                                            
+}
+
+## 입장후중손익누개 선 꺽임 변화발생 파악부 
+gu6IpHuJungSonikNuSunAvBhbs= 0;  # 보편처리일
+if gu6IpHuJungSonikNu1- gu6IpHuJungSonikNu2<=0 and  gu6IpHuJungSonikNu- gu6IpHuJungSonikNu1> 0 then gu6IpHuJungSonikNuSunAvBhbs= 8111; 
+else if gu6IpHuJungSonikNu1- gu6IpHuJungSonikNu2>=0 and  gu6IpHuJungSonikNu- gu6IpHuJungSonikNu1< 0 then gu6IpHuJungSonikNuSunAvBhbs= 1101;
+
+
+
+
+####### 거울 진입청산 7 입장산
+gu7IpBhbs=0;  # 보편처리일
+
+
+### 입장 유 발생
+if gu7Ip==0 and crossup(c, AD_gu(guIpPp[7]) ) then 
+{ gu7IpBhbs=1; gu7Ip=1;  gu7IpSljnGap=c;  gu7IpJnTmGap=AD_gu(guIpPp[7]);  }  
+else if gu7Ip==0 and crossdown(c, AD_gu(guIpPp[7]) ) then 
+{ gu7IpBhbs=-1; gu7Ip=-1;  gu7IpSljnGap=c;  gu7IpJnTmGap=AD_gu(guIpPp[7]);  }  
+
+
+
+### 입장 무 발생
+else if gu7Ip==1 then {
+if AD_gu(guIpPp[7]* guGiGuCheongRyul )>= gu7IpJnTmGap+ soDongTick* (guIpPp[7]* guGiGuDumRyul ) and  crossdown(c, guIpPp[7]* guGiGuCheongRyul ) then { gu7IpBhbs=10; gu7Ip=0; gu7IpMuBsHyung="sunjn";  }
+else if c<= gu7IpSljnGap- soDongTick* (guIpPp[7]* guGiGuDumRyul ) then { gu7IpBhbs=10; gu7Ip=0; gu7IpMuBsHyung="hutoe";  }        
+}
+else if gu7Ip==-1 then {
+if AD_gu(guIpPp[7]* guGiGuCheongRyul )<= gu7IpJnTmGap- soDongTick* (guIpPp[7]* guGiGuDumRyul ) and  crossup(c, guIpPp[7]* guGiGuCheongRyul ) then { gu7IpBhbs=-10; gu7Ip=0; gu7IpMuBsHyung="sunjn";  }
+else if c>= gu7IpSljnGap+ soDongTick* (guIpPp[7]* guGiGuDumRyul ) then { gu7IpBhbs=-10; gu7Ip=0; gu7IpMuBsHyung="hutoe";  }        
+}
+
+
+	
+
+##### 실행 시간통제부
+if slsiSigan==0 then { gu7IpBhbs=0; gu7Ip=1004;  }   
+else if slsiSigan==80 then {
+if gu7Ip==1 then { gu7IpBhbs=10; gu7Ip=1004;  }  
+else if gu7Ip==-1 then { gu7IpBhbs=-10; gu7Ip=1004;  }  
+}
+else if slsiSigan==880 and gu7Ip==1004 then gu7Ip=0;  # 다시 진입 허용
+
+
+
+##### 손익과 입장 처리 종합부
+if pos(gu7IpBhbs)!=10 and pos(gu7Ip)==1 then {
+if gu7Ip==1 then gu7IpJungSonik=c-gu7IpSljnGap -SoDongTick*susuryo;    
+else if gu7Ip==-1 then gu7IpJungSonik=gu7IpSljnGap-c -SoDongTick*susuryo;
+## 입장후중손익누개
+gu7IpHuJungSonikNu2= gu7IpHuJungSonikNu1;
+gu7IpHuJungSonikNu1= gu7IpHuJungSonikNu;
+gu7IpHuJungSonikNu= gu7IpHuSonikNu+gu7IpJungSonik;       
+}
+
+### 청산후 손익계산과 입장 8 처리
+else if pos(gu7IpBhbs)==10 then {
+## 조입장후손익
+if gu7IpBhbs==10 then gu7IpHuSonik=c-gu7IpSljnGap -SoDongTick*susuryo;
+else if gu7IpBhbs==-10 then gu7IpHuSonik=gu7IpSljnGap-c -SoDongTick*susuryo;
+## 조입장후손익누개부
+gu7IpHuSonikNu= gu7IpHuSonikNu+ gu7IpHuSonik;     
+## 입장후중손익누개
+gu7IpHuJungSonikNu2= gu7IpHuJungSonikNu1;
+gu7IpHuJungSonikNu1= gu7IpHuJungSonikNu;
+gu7IpHuJungSonikNu= gu7IpHuSonikNu;                                                             
+## 청산 후처리부 - 처리일
+gu7IpJungSonik=0;                                                            
+}
+
+## 입장후중손익누개 선 꺽임 변화발생 파악부 
+gu7IpHuJungSonikNuSunAvBhbs= 0;  # 보편처리일
+if gu7IpHuJungSonikNu1- gu7IpHuJungSonikNu2<=0 and  gu7IpHuJungSonikNu- gu7IpHuJungSonikNu1> 0 then gu7IpHuJungSonikNuSunAvBhbs= 8111; 
+else if gu7IpHuJungSonikNu1- gu7IpHuJungSonikNu2>=0 and  gu7IpHuJungSonikNu- gu7IpHuJungSonikNu1< 0 then gu7IpHuJungSonikNuSunAvBhbs= 1101;
+
+
+
+
+####### 거울 진입청산 8 입장산
+gu8IpBhbs=0;  # 보편처리일
+
+
+### 입장 유 발생
+if gu8Ip==0 and crossup(c, AD_gu(guIpPp[8]) ) then 
+{ gu8IpBhbs=1; gu8Ip=1;  gu8IpSljnGap=c;  gu8IpJnTmGap=AD_gu(guIpPp[8]);  }  
+else if gu8Ip==0 and crossdown(c, AD_gu(guIpPp[8]) ) then 
+{ gu8IpBhbs=-1; gu8Ip=-1;  gu8IpSljnGap=c;  gu8IpJnTmGap=AD_gu(guIpPp[8]);  }  
+
+
+
+### 입장 무 발생
+else if gu8Ip==1 then {
+if AD_gu(guIpPp[8]* guGiGuCheongRyul )>= gu8IpJnTmGap+ soDongTick* (guIpPp[8]* guGiGuDumRyul ) and  crossdown(c, guIpPp[8]* guGiGuCheongRyul ) then { gu8IpBhbs=10; gu8Ip=0; gu8IpMuBsHyung="sunjn";  }
+else if c<= gu8IpSljnGap- soDongTick* (guIpPp[8]* guGiGuDumRyul ) then { gu8IpBhbs=10; gu8Ip=0; gu8IpMuBsHyung="hutoe";  }        
+}
+else if gu8Ip==-1 then {
+if AD_gu(guIpPp[8]* guGiGuCheongRyul )<= gu8IpJnTmGap- soDongTick* (guIpPp[8]* guGiGuDumRyul ) and  crossup(c, guIpPp[8]* guGiGuCheongRyul ) then { gu8IpBhbs=-10; gu8Ip=0; gu8IpMuBsHyung="sunjn";  }
+else if c>= gu8IpSljnGap+ soDongTick* (guIpPp[8]* guGiGuDumRyul ) then { gu8IpBhbs=-10; gu8Ip=0; gu8IpMuBsHyung="hutoe";  }        
+}
+
+
+	
+
+##### 실행 시간통제부
+if slsiSigan==0 then { gu8IpBhbs=0; gu8Ip=1004;  }   
+else if slsiSigan==80 then {
+if gu8Ip==1 then { gu8IpBhbs=10; gu8Ip=1004;  }  
+else if gu8Ip==-1 then { gu8IpBhbs=-10; gu8Ip=1004;  }  
+}
+else if slsiSigan==880 and gu8Ip==1004 then gu8Ip=0;  # 다시 진입 허용
+
+
+
+##### 손익과 입장 처리 종합부
+if pos(gu8IpBhbs)!=10 and pos(gu8Ip)==1 then {
+if gu8Ip==1 then gu8IpJungSonik=c-gu8IpSljnGap -SoDongTick*susuryo;    
+else if gu8Ip==-1 then gu8IpJungSonik=gu8IpSljnGap-c -SoDongTick*susuryo;
+## 입장후중손익누개
+gu8IpHuJungSonikNu2= gu8IpHuJungSonikNu1;
+gu8IpHuJungSonikNu1= gu8IpHuJungSonikNu;
+gu8IpHuJungSonikNu= gu8IpHuSonikNu+gu8IpJungSonik;       
+}
+
+### 청산후 손익계산과 입장 8 처리
+else if pos(gu8IpBhbs)==10 then {
+## 조입장후손익
+if gu8IpBhbs==10 then gu8IpHuSonik=c-gu8IpSljnGap -SoDongTick*susuryo;
+else if gu8IpBhbs==-10 then gu8IpHuSonik=gu8IpSljnGap-c -SoDongTick*susuryo;
+## 조입장후손익누개부
+gu8IpHuSonikNu= gu8IpHuSonikNu+ gu8IpHuSonik;     
+## 입장후중손익누개
+gu8IpHuJungSonikNu2= gu8IpHuJungSonikNu1;
+gu8IpHuJungSonikNu1= gu8IpHuJungSonikNu;
+gu8IpHuJungSonikNu= gu8IpHuSonikNu;                                                             
+## 청산 후처리부 - 처리일
+gu8IpJungSonik=0;                                                            
+}
+
+## 입장후중손익누개 선 꺽임 변화발생 파악부 
+gu8IpHuJungSonikNuSunAvBhbs= 0;  # 보편처리일
+if gu8IpHuJungSonikNu1- gu8IpHuJungSonikNu2<=0 and  gu8IpHuJungSonikNu- gu8IpHuJungSonikNu1> 0 then gu8IpHuJungSonikNuSunAvBhbs= 8111; 
+else if gu8IpHuJungSonikNu1- gu8IpHuJungSonikNu2>=0 and  gu8IpHuJungSonikNu- gu8IpHuJungSonikNu1< 0 then gu8IpHuJungSonikNuSunAvBhbs= 1101;
+
+
+
+
+
+####### 거울 진입청산 9 입장산
+gu9IpBhbs=0;  # 보편처리일
+
+
+### 입장 유 발생
+if gu9Ip==0 and crossup(c, AD_gu(guIpPp[9]) ) then 
+{ gu9IpBhbs=1; gu9Ip=1;  gu9IpSljnGap=c;  gu9IpJnTmGap=AD_gu(guIpPp[9]);  }  
+else if gu9Ip==0 and crossdown(c, AD_gu(guIpPp[9]) ) then 
+{ gu9IpBhbs=-1; gu9Ip=-1;  gu9IpSljnGap=c;  gu9IpJnTmGap=AD_gu(guIpPp[9]);  }  
+
+
+
+### 입장 무 발생
+else if gu9Ip==1 then {
+if AD_gu(guIpPp[9]* guGiGuCheongRyul )>= gu9IpJnTmGap+ soDongTick* (guIpPp[9]* guGiGuDumRyul ) and  crossdown(c, guIpPp[9]* guGiGuCheongRyul ) then { gu9IpBhbs=10; gu9Ip=0; gu9IpMuBsHyung="sunjn";  }
+else if c<= gu9IpSljnGap- soDongTick* (guIpPp[9]* guGiGuDumRyul ) then { gu9IpBhbs=10; gu9Ip=0; gu9IpMuBsHyung="hutoe";  }        
+}
+else if gu9Ip==-1 then {
+if AD_gu(guIpPp[9]* guGiGuCheongRyul )<= gu9IpJnTmGap- soDongTick* (guIpPp[9]* guGiGuDumRyul ) and  crossup(c, guIpPp[9]* guGiGuCheongRyul ) then { gu9IpBhbs=-10; gu9Ip=0; gu9IpMuBsHyung="sunjn";  }
+else if c>= gu9IpSljnGap+ soDongTick* (guIpPp[9]* guGiGuDumRyul ) then { gu9IpBhbs=-10; gu9Ip=0; gu9IpMuBsHyung="hutoe";  }        
+}
+
+
+	
+
+##### 실행 시간통제부
+if slsiSigan==0 then { gu9IpBhbs=0; gu9Ip=1004;  }   
+else if slsiSigan==80 then {
+if gu9Ip==1 then { gu9IpBhbs=10; gu9Ip=1004;  }  
+else if gu9Ip==-1 then { gu9IpBhbs=-10; gu9Ip=1004;  }  
+}
+else if slsiSigan==880 and gu9Ip==1004 then gu9Ip=0;  # 다시 진입 허용
+
+
+
+##### 손익과 입장 처리 종합부
+if pos(gu9IpBhbs)!=10 and pos(gu9Ip)==1 then {
+if gu9Ip==1 then gu9IpJungSonik=c-gu9IpSljnGap -SoDongTick*susuryo;    
+else if gu9Ip==-1 then gu9IpJungSonik=gu9IpSljnGap-c -SoDongTick*susuryo;
+## 입장후중손익누개
+gu9IpHuJungSonikNu2= gu9IpHuJungSonikNu1;
+gu9IpHuJungSonikNu1= gu9IpHuJungSonikNu;
+gu9IpHuJungSonikNu= gu9IpHuSonikNu+gu9IpJungSonik;       
+}
+
+### 청산후 손익계산과 입장 8 처리
+else if pos(gu9IpBhbs)==10 then {
+## 조입장후손익
+if gu9IpBhbs==10 then gu9IpHuSonik=c-gu9IpSljnGap -SoDongTick*susuryo;
+else if gu9IpBhbs==-10 then gu9IpHuSonik=gu9IpSljnGap-c -SoDongTick*susuryo;
+## 조입장후손익누개부
+gu9IpHuSonikNu= gu9IpHuSonikNu+ gu9IpHuSonik;     
+## 입장후중손익누개
+gu9IpHuJungSonikNu2= gu9IpHuJungSonikNu1;
+gu9IpHuJungSonikNu1= gu9IpHuJungSonikNu;
+gu9IpHuJungSonikNu= gu9IpHuSonikNu;                                                             
+## 청산 후처리부 - 처리일
+gu9IpJungSonik=0;                                                            
+}
+
+## 입장후중손익누개 선 꺽임 변화발생 파악부 
+gu9IpHuJungSonikNuSunAvBhbs= 0;  # 보편처리일
+if gu9IpHuJungSonikNu1- gu9IpHuJungSonikNu2<=0 and  gu9IpHuJungSonikNu- gu9IpHuJungSonikNu1> 0 then gu9IpHuJungSonikNuSunAvBhbs= 8111; 
+else if gu9IpHuJungSonikNu1- gu9IpHuJungSonikNu2>=0 and  gu9IpHuJungSonikNu- gu9IpHuJungSonikNu1< 0 then gu9IpHuJungSonikNuSunAvBhbs= 1101;
+
+
+
+
+
+############################  종합입장강 ############################
+####### 종합입장산
+### 보편 처리일
+hapIpHurumBhbs=-1004;  hapIpBhbs=-1004;
+
+
+/*
+### 기준진선변화발생 판단부 1 - 수익선 꺾임 갱신
+junJnSunBhbs=0;  # 보편처리일
+
+if hapIpHurum==0 and  hapIpHurum1!=0 then junJnSunBhbs=1004; 
+else if hapIpHurum==1 then { 
+if gu1IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+else if ju2IpHuJungSonikNuSunAvBhbs== 8111 or 
+jo1IpHuJungSonikNuSunAvBhbs== 8111 or  jo2IpHuJungSonikNuSunAvBhbs== 8111 or
+bo1IpHuJungSonikNuSunAvBhbs== 8111 or  bu1IpHuJungSonikNuSunAvBhbs== 8111 or
+gu0IpHuJungSonikNuSunAvBhbs== 8111 or  sl2IpHuJungSonikNuSunAvBhbs== 8111 then junJnSunBhbs=1004; 
+}
+else if hapIpHurum==2 then { 
+if ju2IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+else if gu1IpHuJungSonikNuSunAvBhbs== 8111 or 
+jo1IpHuJungSonikNuSunAvBhbs== 8111 or  jo2IpHuJungSonikNuSunAvBhbs== 8111 or
+bo1IpHuJungSonikNuSunAvBhbs== 8111 or  bu1IpHuJungSonikNuSunAvBhbs== 8111 or
+gu0IpHuJungSonikNuSunAvBhbs== 8111 or  sl2IpHuJungSonikNuSunAvBhbs== 8111 then junJnSunBhbs=1004; 
+}
+else if hapIpHurum==3 then { 
+if jo1IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+else if gu1IpHuJungSonikNuSunAvBhbs== 8111 or 
+ju2IpHuJungSonikNuSunAvBhbs== 8111 or  jo2IpHuJungSonikNuSunAvBhbs== 8111 or
+bo1IpHuJungSonikNuSunAvBhbs== 8111 or  bu1IpHuJungSonikNuSunAvBhbs== 8111 or
+gu0IpHuJungSonikNuSunAvBhbs== 8111 or  sl2IpHuJungSonikNuSunAvBhbs== 8111 then junJnSunBhbs=1004; 
+}
+else if hapIpHurum==4 then { 
+if jo2IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+else if gu1IpHuJungSonikNuSunAvBhbs== 8111 or 
+ju2IpHuJungSonikNuSunAvBhbs== 8111 or  jo1IpHuJungSonikNuSunAvBhbs== 8111 or
+bo1IpHuJungSonikNuSunAvBhbs== 8111 or  bu1IpHuJungSonikNuSunAvBhbs== 8111 or
+gu0IpHuJungSonikNuSunAvBhbs== 8111 or  sl2IpHuJungSonikNuSunAvBhbs== 8111 then junJnSunBhbs=1004; 
+}
+else if hapIpHurum==5 then { 
+if bo1IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+else if gu1IpHuJungSonikNuSunAvBhbs== 8111 or 
+ju2IpHuJungSonikNuSunAvBhbs== 8111 or  jo1IpHuJungSonikNuSunAvBhbs== 8111 or
+jo2IpHuJungSonikNuSunAvBhbs== 8111 or  bu1IpHuJungSonikNuSunAvBhbs== 8111 or
+gu0IpHuJungSonikNuSunAvBhbs== 8111 or  sl2IpHuJungSonikNuSunAvBhbs== 8111 then junJnSunBhbs=1004; 
+}
+else if hapIpHurum==6 then { 
+if bu1IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+else if gu1IpHuJungSonikNuSunAvBhbs== 8111 or 
+ju2IpHuJungSonikNuSunAvBhbs== 8111 or  jo1IpHuJungSonikNuSunAvBhbs== 8111 or
+jo2IpHuJungSonikNuSunAvBhbs== 8111 or  bo1IpHuJungSonikNuSunAvBhbs== 8111 or
+gu0IpHuJungSonikNuSunAvBhbs== 8111 or  sl2IpHuJungSonikNuSunAvBhbs== 8111 then junJnSunBhbs=1004; 
+}
+else if hapIpHurum==7 then { 
+if gu0IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+else if gu1IpHuJungSonikNuSunAvBhbs== 8111 or 
+ju2IpHuJungSonikNuSunAvBhbs== 8111 or  jo1IpHuJungSonikNuSunAvBhbs== 8111 or
+jo2IpHuJungSonikNuSunAvBhbs== 8111 or  bo1IpHuJungSonikNuSunAvBhbs== 8111 or
+bu1IpHuJungSonikNuSunAvBhbs== 8111 or  sl2IpHuJungSonikNuSunAvBhbs== 8111 then junJnSunBhbs=1004; 
+}
+else if hapIpHurum==8 then { 
+if sl2IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+else if gu1IpHuJungSonikNuSunAvBhbs== 8111 or 
+ju2IpHuJungSonikNuSunAvBhbs== 8111 or  jo1IpHuJungSonikNuSunAvBhbs== 8111 or
+jo2IpHuJungSonikNuSunAvBhbs== 8111 or  bo1IpHuJungSonikNuSunAvBhbs== 8111 or
+bu1IpHuJungSonikNuSunAvBhbs== 8111 or  gu0IpHuJungSonikNuSunAvBhbs== 8111 then junJnSunBhbs=1004; 
+}
+*/
+/*
+### 기준진선변화발생 판단부 1-1 - 일선 수익선 꺾임시만
+junJnSunBhbs=0;  # 보편처리일
+
+if hapIpHurum==10040 and  hapIpHurum1!=10040 then junJnSunBhbs=1004; 
+else if hapIpHurum==10 then { 
+if gu0IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+}
+else if hapIpHurum==11 then { 
+if gu1IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+}
+else if hapIpHurum==12 then { 
+if gu2IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+}
+else if hapIpHurum==13 then { 
+if gu3IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+}
+else if hapIpHurum==14 then { 
+if gu4IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+}
+else if hapIpHurum==15 then { 
+if gu5IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+}
+else if hapIpHurum==16 then { 
+if gu6IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+}
+else if hapIpHurum==17 then { 
+if gu7IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+}
+else if hapIpHurum==18then { 
+if gu8IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+}
+else if hapIpHurum==19then { 
+if gu9IpHuJungSonikNuSunAvBhbs== 1101 then junJnSunBhbs=1004;
+}
+*/
+
+
+
+### 기준진선변화발생 판단부 2 - 봉간격 갱신 
+junJnSunBhbs=0;  # 보편처리일
+if mod(barindex, junjnSunBongGanGuk )==0 then junJnSunBhbs=1004;
+
+
+ 
+
+
+
+
+### 기준진선변화발생 갱신부
+if junJnSunBhbs==1004 then {
+gu0IpHuJungSonikNuJunJnGap=gu0IpHuJungSonikNu1; 
+gu1IpHuJungSonikNuJunJnGap=gu1IpHuJungSonikNu1; 
+gu2IpHuJungSonikNuJunJnGap=gu2IpHuJungSonikNu1; 
+gu3IpHuJungSonikNuJunJnGap=gu3IpHuJungSonikNu1; 
+gu4IpHuJungSonikNuJunJnGap=gu4IpHuJungSonikNu1; 
+gu5IpHuJungSonikNuJunJnGap=gu5IpHuJungSonikNu1; 
+gu6IpHuJungSonikNuJunJnGap=gu6IpHuJungSonikNu1; 
+gu7IpHuJungSonikNuJunJnGap=gu7IpHuJungSonikNu1; 
+gu8IpHuJungSonikNuJunJnGap=gu8IpHuJungSonikNu1; 
+gu9IpHuJungSonikNuJunJnGap=gu9IpHuJungSonikNu1; 
+}
+
+
+
+## 입장후중손익누개기준진차 산출
+gu0IpHuJungSonikNuJunJnCha=gu0IpHuJungSonikNu-gu0IpHuJungSonikNuJunJnGap;
+gu1IpHuJungSonikNuJunJnCha=gu1IpHuJungSonikNu-gu1IpHuJungSonikNuJunJnGap;
+gu2IpHuJungSonikNuJunJnCha=gu2IpHuJungSonikNu-gu2IpHuJungSonikNuJunJnGap;
+gu3IpHuJungSonikNuJunJnCha=gu3IpHuJungSonikNu-gu3IpHuJungSonikNuJunJnGap;
+gu4IpHuJungSonikNuJunJnCha=gu4IpHuJungSonikNu-gu4IpHuJungSonikNuJunJnGap;
+gu5IpHuJungSonikNuJunJnCha=gu5IpHuJungSonikNu-gu5IpHuJungSonikNuJunJnGap;
+gu6IpHuJungSonikNuJunJnCha=gu6IpHuJungSonikNu-gu6IpHuJungSonikNuJunJnGap;
+gu7IpHuJungSonikNuJunJnCha=gu7IpHuJungSonikNu-gu7IpHuJungSonikNuJunJnGap;
+gu8IpHuJungSonikNuJunJnCha=gu8IpHuJungSonikNu-gu8IpHuJungSonikNuJunJnGap;
+gu9IpHuJungSonikNuJunJnCha=gu9IpHuJungSonikNu-gu9IpHuJungSonikNuJunJnGap;
+
+
+
+
+### 최대입장후중손익누개기준진차값 과 그 위치
+deIpHuJungSonikNuJunJnChaGap= AD_de(gu0IpHuJungSonikNuJunJnCha, gu1IpHuJungSonikNuJunJnCha, gu2IpHuJungSonikNuJunJnCha, gu3IpHuJungSonikNuJunJnCha, gu4IpHuJungSonikNuJunJnCha, gu5IpHuJungSonikNuJunJnCha, gu6IpHuJungSonikNuJunJnCha, gu7IpHuJungSonikNuJunJnCha, gu8IpHuJungSonikNuJunJnCha, gu9IpHuJungSonikNuJunJnCha );
+deJunJnChaGapWc1= deJunJnChaGapWc;
+deJunJnChaGapWc= ADT_dongChatGi1019(deIpHuJungSonikNuJunJnChaGap, gu0IpHuJungSonikNuJunJnCha, gu1IpHuJungSonikNuJunJnCha, gu2IpHuJungSonikNuJunJnCha, gu3IpHuJungSonikNuJunJnCha, gu4IpHuJungSonikNuJunJnCha, gu5IpHuJungSonikNuJunJnCha, gu6IpHuJungSonikNuJunJnCha, gu7IpHuJungSonikNuJunJnCha, gu8IpHuJungSonikNuJunJnCha, gu9IpHuJungSonikNuJunJnCha );
+
+
+
+#### 종합입장흐름 초
+if hapIpHurum==-1 and deJunJnChaGapWc>=1 then { hapIpHurumBhbs=deJunJnChaGapWc;  hapIpHurum1=hapIpHurum; hapIpHurum=deJunJnChaGapWc;  }
+
+### 현재 입장 파견부 - 현재입장후중손익누개기준진차, 현재유지입장 - 파견부인데 종합입장흐름 초 이후 유 이전 있어야 함. 
+if hapIpHurum==10040 then { hhIpHuJungSonikNuJunJnCha= 0;  hhYuIp= 0; }
+else if hapIpHurum==10 then { hhIpHuJungSonikNuJunJnCha= gu0IpHuJungSonikNuJunJnCha;  hhYuIp= gu0Ip; } 
+else if hapIpHurum==11 then { hhIpHuJungSonikNuJunJnCha= gu1IpHuJungSonikNuJunJnCha;  hhYuIp= gu1Ip; }
+else if hapIpHurum==12 then { hhIpHuJungSonikNuJunJnCha= gu2IpHuJungSonikNuJunJnCha;  hhYuIp= gu2Ip; }
+else if hapIpHurum==13 then { hhIpHuJungSonikNuJunJnCha= gu3IpHuJungSonikNuJunJnCha;  hhYuIp= gu3Ip; }
+else if hapIpHurum==14 then { hhIpHuJungSonikNuJunJnCha= gu4IpHuJungSonikNuJunJnCha;  hhYuIp= gu4Ip; }
+else if hapIpHurum==15 then { hhIpHuJungSonikNuJunJnCha= gu5IpHuJungSonikNuJunJnCha;  hhYuIp= gu5Ip; }
+else if hapIpHurum==16 then { hhIpHuJungSonikNuJunJnCha= gu6IpHuJungSonikNuJunJnCha;  hhYuIp= gu6Ip; }
+else if hapIpHurum==17 then { hhIpHuJungSonikNuJunJnCha= gu7IpHuJungSonikNuJunJnCha;  hhYuIp= gu7Ip; }
+else if hapIpHurum==18 then { hhIpHuJungSonikNuJunJnCha= gu8IpHuJungSonikNuJunJnCha;  hhYuIp= gu8Ip; }
+else if hapIpHurum==19 then { hhIpHuJungSonikNuJunJnCha= gu9IpHuJungSonikNuJunJnCha;  hhYuIp= gu9Ip; }
+
+
+
+
+#### 종합입장흐름 유
+if hapIpHurum>=0 then {
+   ### 종합입장흐름이 변화할시
+if deIpHuJungSonikNuJunJnChaGap>= hhIpHuJungSonikNuJunJnCha+(SoDongTick*hapIpHurumBoTick) then {
+hapIpHurumBhbs=deJunJnChaGapWc;  hapIpHurum1=hapIpHurum; hapIpHurum=deJunJnChaGapWc;      
+## 현재새입장부
+if hapIpHurum==10040 then hhSeIp= 0; 
+else if hapIpHurum==10 then hhSeIp= gu0Ip;  
+else if hapIpHurum==11 then hhSeIp= gu1Ip; 
+else if hapIpHurum==12 then hhSeIp= gu2Ip; 
+else if hapIpHurum==13 then hhSeIp= gu3Ip; 
+else if hapIpHurum==14 then hhSeIp= gu4Ip; 
+else if hapIpHurum==15 then hhSeIp= gu5Ip; 
+else if hapIpHurum==16 then hhSeIp= gu6Ip; 
+else if hapIpHurum==17 then hhSeIp= gu7Ip; 
+else if hapIpHurum==18 then hhSeIp= gu8Ip;  
+else if hapIpHurum==19 then hhSeIp= gu9Ip;  
+
+
+                                                                  
+## 종합입장 0 시
+if hapIp==0 then {
+if hhSeIp==0 then { hapIpBhbs=-1004; hapIp=0; }
+else if hhSeIp==1 then { hapIpBhbs=1; hapIp1=hapIp; hapIp=1; }
+else if hhSeIp==-1 then { hapIpBhbs=-1; hapIp1=hapIp; hapIp=-1; }     
+}
+## 종합입장 1 시
+else if hapIp>=1 then {
+if hhSeIp==0 then { hapIpBhbs=10; hapIp1=hapIp; hapIp=0; }
+else if hhSeIp==1 then { hapIpBhbs=2; hapIp1=hapIp; hapIp=2; }
+else if hhSeIp==-1 then { hapIpBhbs=1001; hapIp1=hapIp; hapIp=-1; }     
+}                 
+## 종합입장 -1 시
+else if hapIp<=-1 then {
+if hhSeIp==0 then { hapIpBhbs=-10; hapIp1=hapIp; hapIp=0; }
+else if hhSeIp==1 then { hapIpBhbs=-1011; hapIp1=hapIp; hapIp=1; }
+else if hhSeIp==-1 then { hapIpBhbs=-2; hapIp1=hapIp; hapIp=-2; }     
+}     
+}
+
+
+### 종합입장흐름이 유지할시
+else {
+## 종합입장 0 시
+if hapIp==0 then {
+if hhYuIp==0 then { hapIpBhbs=-1004; hapIp=0; }
+else if hhYuIp==1 then { hapIpBhbs=1; hapIp1=hapIp; hapIp=1; }
+else if hhYuIp==-1 then { hapIpBhbs=-1; hapIp1=hapIp; hapIp=-1; }     
+}
+## 종합입장 1 시
+else if hapIp>=1 then {
+if hhYuIp==0 then { hapIpBhbs=10; hapIp1=hapIp; hapIp=0; }
+else if hhYuIp==1 then { hapIpBhbs=2; hapIp1=hapIp; hapIp=2; }
+else if hhYuIp==-1 then { hapIpBhbs=1001; hapIp1=hapIp; hapIp=-1; }     
+}                 
+## 종합입장 -1 시
+else if hapIp<=-1 then {
+if hhYuIp==0 then { hapIpBhbs=-10; hapIp1=hapIp; hapIp=0; }
+else if hhYuIp==1 then { hapIpBhbs=-1011; hapIp1=hapIp; hapIp=1; }
+else if hhYuIp==-1 then { hapIpBhbs=-2; hapIp1=hapIp; hapIp=-2; }     
+}     
+}
+}
+
+
+
+
+##### 실행
+if hapIpBhbs==1 then buy(); 
+else if hapIpBhbs==-1 then sell();
+else if hapIpBhbs==10 then ExitLong(); 
+else if hapIpBhbs==-10 then ExitShort();  
+else if hapIpBhbs==1001 then { ExitLong(); sell();  }
+else if hapIpBhbs==-1011 then { ExitShort(); buy();  }
+
+
+
+##### 메세지로그
+MessageLog( "date %.f time %.f barindex %.f  deIpHuJungSonikNuJunJnChaGap %.4f deJunJnChaGapWc %.f hapIpHurum %.f", 
+date, time, barindex, deIpHuJungSonikNuJunJnChaGap, deJunJnChaGapWc, hapIpHurum );
+
+
+	
+
